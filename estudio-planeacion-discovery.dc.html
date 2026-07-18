@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planeación &amp; Discovery — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#eef2f9">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="servicios.dc.html" style="color:#38bdf8">Servicios</a> / Planeación &amp; Discovery</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">SDLC · 01</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">Planeación &amp; <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">Discovery</span></h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Requerimientos automáticos · Historias de usuario · Épicas y backlog · Estimaciones · Análisis de impacto.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/rag-empresarial-crop.png" alt="Planeación &amp; Discovery" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">Dónde la IA más cambia el ciclo de desarrollo (y dónde menos)</h2>
+    <p>La narrativa de "la IA escribe código" domina la conversación sobre IA en software. Pero hay un problema: el código representa apenas el 14% del día de un desarrollador. El resto del tiempo va a reuniones, revisiones, coordinación, planificación y documentación. Si la IA solo acelera el 14%, el impacto en el ciclo completo es marginal.</p>
+    <p>La fase de Discovery y Planeación — donde se definen requerimientos, se construyen historias de usuario, se estructura el backlog y se estiman los esfuerzos — consume una porción desproporcionada del tiempo del equipo técnico y del negocio. Y es exactamente donde la IA tiene más que ofrecer que en la escritura de código.</p>
+
+    <h2>1. Requerimientos automáticos: del lenguaje del negocio al lenguaje del equipo</h2>
+    <p>El cuello de botella clásico: el negocio tiene una idea, el equipo técnico necesita un requerimiento estructurado, y en el medio hay una traducción que cuesta tiempo, reuniones y malentendidos.</p>
+    <p>Los modelos de lenguaje parsean requerimientos de negocio, detectan ambigüedades y generan historias de usuario estructuradas con criterios de aceptación a partir de las notas de stakeholders. El proceso — que antes era: reunión → transcripción → borrador → revisión — se convierte en: reunión → IA genera el borrador estructurado → el analista valida y refina.</p>
+    <p>Herramientas como ChatPRD permiten generar PRDs (Product Requirements Documents) estructurados en minutos a partir de requerimientos de alto nivel o historias de usuario, completos con criterios de aceptación y casos borde. El PM o analista de negocios deja de ser la persona que "escribe el documento" y pasa a ser quien "revisa y valida" lo que la IA propone.</p>
+    <p>El riesgo que nadie menciona: la IA puede ayudar con el trabajo previo — escanear backlogs, señalar historias vagas, generar primeros borradores de requerimientos — pero no puede decirte si la dirección del producto es correcta. No puede evaluar el riesgo de negocio frente al costo técnico, ni leer el ambiente en una reunión de stakeholders. La estrategia de producto sigue siendo trabajo humano.</p>
+
+    <h2>2. Historias de usuario: calidad, consistencia y velocidad</h2>
+    <p>La historia de usuario bien escrita — "Como [rol], quiero [acción] para [beneficio]" con criterios de aceptación claros — es la unidad mínima que un equipo puede estimar, planificar y entregar. La mayoría de los backlogs tienen historias mal escritas, ambiguas o con criterios de aceptación ausentes.</p>
+    <p>Las herramientas de IA para historias de usuario con procesamiento de lenguaje natural refinan las historias y mejoran su calidad, conduciendo a un backlog más saludable, requerimientos más claros y sprints más eficientes. El equipo no tiene que debatir qué quisieron decir los stakeholders — el borrador ya está estructurado con el formato correcto.</p>
+    <p>Otro beneficio menos obvio: la IA puede detectar cuando una historia es en realidad una épica (demasiado grande para un sprint), cuando tiene dependencias no declaradas, o cuando el criterio de aceptación es ambiguo o no verificable. En lugar de que ese problema emerja en el sprint planning, lo señala antes.</p>
+
+    <h2>3. Épicas y backlog: estructura que se mantiene actualizada</h2>
+    <p>El backlog que nadie mantiene es el principal síntoma de un proceso de desarrollo disfuncional. Con el tiempo se llena de historias obsoletas, duplicadas o sin prioridad, y el equipo deja de confiar en él como fuente de verdad.</p>
+    <p>La IA agéntica puede monitorear la actividad del backlog, señalar incidencias y recordar al equipo cuando se requiere atención. La analítica predictiva ayuda a los líderes de entrega a anticiparse: prevé la demanda, detecta cuellos de botella y recomienda los próximos pasos basados en datos históricos.</p>
+    <p>La estructuración épicas → historias → tareas — que antes requería sesiones largas de refinamiento — se acelera: la IA puede descomponer una épica en historias candidatas, el equipo las revisa y valida. El PM que reportó que las predicciones de IA en Jira recortaron el tiempo de sprint planning en un 30% no está usando una herramienta diferente — está usando una capa de IA sobre el mismo flujo de trabajo.</p>
+
+    <h2>4. Estimaciones: datos históricos + contexto del equipo</h2>
+    <p>La estimación es el proceso donde los equipos más mienten — no por deshonestidad, sino porque estimar es difícil sin datos comparables. Planning Poker da consenso pero no precisión histórica.</p>
+    <p>Las herramientas de planeación con ML analizan datos históricos de velocidad para producir estimaciones de sprint más precisas y señalar riesgos de dependencia antes de que se materialicen. El modelo conoce cuánto tardó el equipo en entregar historias similares, qué parte del código afecta, y si hay dependencias entre ítems del sprint.</p>
+    <p>Los datos de referencia de la industria en 2026: equipos de bajo rendimiento redujeron su Lead Time to Value de 62 días a 33 días; equipos de alto rendimiento lo mejoraron de 22.5 a 20 días. La diferencia en impacto se explica por saturación — donde ya existe eficiencia, la IA aporta menos. Donde hay mayor caos en la planeación, aporta más.</p>
+    <p>El punto que más se ignora en la conversación sobre estimaciones con IA: la IA acelera la generación de código, pero crea nuevos cuellos de botella en revisión e integración. Si el código se produce más rápido pero la revisión no escala, el throughput real del sistema no mejora. La estimación debe incluir el costo de revisión del código generado por IA, no solo el tiempo de escritura.</p>
+
+    <h2>5. Análisis de impacto: antes de tocar una línea de código</h2>
+    <p>El análisis de impacto — entender qué otros módulos, servicios o funcionalidades se verán afectados por un cambio propuesto — es el trabajo que más se omite y más incidentes causa en producción.</p>
+    <p>Con IA aplicada al codebase: el análisis de impacto pasa de ser un ejercicio manual que un arquitecto senior hace "de memoria" a una consulta sobre el grafo de dependencias real del código. "¿Si modifico este endpoint, qué otras partes del sistema pueden romperse?" — el modelo analiza las dependencias reales, no las que están documentadas (que rara vez están actualizadas).</p>
+    <p>La IA es más útil donde existe variabilidad reducida y patrones claros. El análisis de arquitectura, el diseño del modelo de seguridad, y las decisiones que requieren contexto de negocio y criterio de producto deben seguir en manos de arquitectos y desarrolladores senior. El análisis de impacto con IA es una herramienta de apoyo, no un oráculo — señala dependencias candidatas, pero el juicio sobre cuáles importan en el contexto del negocio sigue siendo humano.</p>
+
+    <h2>El número que pone todo en perspectiva</h2>
+    <p>El 84% de los desarrolladores usa herramientas de IA en 2026; el 41% de todo el código escrito en 2025 ya es generado por IA. Los desarrolladores reportan ahorros de 30-60% del tiempo en tareas de codificación, testing y documentación. Sin embargo:</p>
+    <p>La ganancia media de throughput es del 8% a nivel de sistema, no el 30-55% que muestran los benchmarks individuales. La diferencia: acelerar la codificación sin desatascar la revisión, el planning o el testing no mejora la entrega del sistema completo.</p>
+    <p>La planeación y el discovery son exactamente el punto donde ese cuello de botella puede moverse — no con más código, sino con mejores historias, estimaciones más precisas y análisis de impacto que lleguen antes de que el error se cuele a producción.</p>
+
+    <h2>Por dónde empezar en este dominio</h2>
+    <p>Si el equipo ya tiene un flujo ágil maduro, el punto de entrada más rápido es el refinamiento asistido del backlog — la IA mejora la calidad de las historias existentes antes de que lleguen al sprint. Si el equipo todavía lucha con requerimientos ambiguos, el punto de entrada es la generación asistida de PRDs — convierte las notas del stakeholder en algo estructurado antes de la primera reunión técnica. Ambos cambios son visibles en semanas, no en trimestres.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: Ailoitte AI in SDLC 2026, DevEssence AI &amp; SDLC Impact 2026, DX AI Measurement Hub, Larridin Developer Productivity Benchmarks 2026, Plandek Engineering Benchmarks 2026, ChatPRD AI for PMs 2026, Index.dev Developer Stats 2026, Zylos Research Dev Metrics 2026, Visual Paradigm AI User Story Tool, Atlassian/Asana Backlog Guides — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Backlog saludable o síntoma de un proceso disfuncional?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Evaluamos tu flujo de discovery y planeación antes de sumar más herramientas.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

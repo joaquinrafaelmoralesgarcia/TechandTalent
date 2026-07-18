@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .icard{transition:transform .3s ease}
+  .icard:hover{transform:translateY(-5px)}
+  .filt:hover{color:#eef2f9 !important}
+  .btnp:hover{filter:brightness(1.08)}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#eef2f9">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<div style="padding:70px 56px 40px;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:start">
+  <div>
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / Insights</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.15;letter-spacing:-.01em;margin:0;max-width:1000px">Explora estudios, casos reales y perspectivas sobre la IA aplicada al software y a la operación empresarial.</h1>
+  </div>
+  <img src="assets/photos/insights-hero-estudio.png" alt="Estudio: la experiencia del cliente al máximo" style="width:300px;height:424px;object-fit:contain;border-radius:14px;justify-self:end" />
+</div>
+
+<!-- ===== FILTERS ===== -->
+<div style="display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);margin:0 56px">
+  <div class="filt" style="padding:22px 8px 22px 0;border-right:1px solid rgba(255,255,255,.14);display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600;color:#c3cbdd;cursor:pointer"><span style="font-size:22px;font-weight:400;color:#38bdf8">+</span>Tema</div>
+  <div class="filt" style="padding:22px 8px 22px 32px;border-right:1px solid rgba(255,255,255,.14);display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600;color:#c3cbdd;cursor:pointer"><span style="font-size:22px;font-weight:400;color:#38bdf8">+</span>Industria</div>
+  <div class="filt" style="padding:22px 8px 22px 32px;display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600;color:#c3cbdd;cursor:pointer"><span style="font-size:22px;font-weight:400;color:#38bdf8">+</span>Tipo de contenido</div>
+</div>
+<div style="padding:20px 56px 0;display:flex;justify-content:flex-end;font-size:14px;color:#7d8bab">Ordenar por: Selecciones del editor ⌄</div>
+
+<!-- ===== GRID ===== -->
+<div style="padding:24px 56px 64px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+  <a class="icard" href="estudio-migracion-lenguajes.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(23,15,4,.15),rgba(46,26,7,.88)),url('assets/photos/migrar.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#fbbf6b">ESTUDIO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">Migrar cualquier versión de cualquier lenguaje con IA: 60% menos tiempo</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Modernización · 6 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="caso-fraude-bansi.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(6,10,26,.12),rgba(9,17,46,.88)),url('assets/photos/fraude.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#60a5fa">CASO DE ÉXITO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">Detección de fraude en banca con modelos privados</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Banca &amp; Fintech · 5 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="insight-copilotos-internos.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(20,10,26,.15),rgba(38,14,52,.88)),url('assets/photos/copilotos2.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#c4b5fd">PUNTO DE VISTA</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">Copilotos internos: equipos pequeños que rinden como grandes</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Productividad · 4 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="caso-novasoft-devsecops.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(26,8,10,.15),rgba(48,12,18,.88)),url('assets/photos/devsecops3-crop.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#fb7185">ESTUDIO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">DevSecOps con IA: seguridad desde el primer commit</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Seguridad · 7 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="caso-axontech-sdlc.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(4,20,20,.15),rgba(6,40,42,.88)),url('assets/photos/sdlc-crop4.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#5eead4">ESTUDIO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">El SDLC AI-Native: cómo entregar 10× más rápido</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Ingeniería · 8 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="insight-rag-empresarial.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(6,20,10,.15),rgba(8,40,22,.88)),url('assets/photos/rag-crop6.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#6ee7b7">PUNTO DE VISTA</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">RAG empresarial: tu conocimiento, potenciado por IA</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Datos · 5 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="caso-seguros-nova-reclamos.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:#160e30 url('assets/photos/reclamos-crop4.png') center/94% auto no-repeat;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#a78bfa">CASO DE ÉXITO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">Automatización de reclamos en seguros de punta a punta</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Seguros · 6 min</div></div>
+    </div>
+  </a>
+  <a class="icard" href="caso-modostore-pricing.dc.html" style="position:relative;height:420px;border-radius:6px;overflow:hidden;background:linear-gradient(180deg,rgba(24,18,4,.15),rgba(46,32,6,.88)),url('assets/photos/pricing-crop2.png');background-size:cover;background-position:center;display:block">
+    <div style="position:absolute;inset:0;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#fcd34d">ESTUDIO</div>
+      <div><div style="font-family:'Source Serif 4',serif;font-size:23px;line-height:1.18;font-weight:500">Pricing dinámico en retail con IA: márgenes en tiempo real</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:12px">Retail · 5 min</div></div>
+    </div>
+  </a>
+</div>
+
+<!-- ===== NEWSLETTER ===== -->
+<div style="margin:0 56px 56px;padding:48px 52px;border-radius:18px;background:#0c1424;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;gap:30px">
+  <div>
+    <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:30px;margin:0 0 8px">Recibe nuestros insights de IA</h2>
+    <p style="font-size:14.5px;color:#8f9bb8;margin:0">Estudios y casos prácticos, una vez al mes. Sin spam.</p>
+  </div>
+  <div style="display:flex;gap:10px">
+    <input type="email" placeholder="tu@empresa.com" style="background:#070b16;border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:14px 18px;color:#eef2f9;font-size:14px;font-family:Archivo;width:260px">
+    <a class="btnp" href="contacto.dc.html" style="font-size:14px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:14px 24px;border-radius:9px;white-space:nowrap">Suscribirme</a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

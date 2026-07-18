@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plataforma &amp; MLOps — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#eef2f9">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="servicios.dc.html" style="color:#38bdf8">Servicios</a> / Plataforma &amp; MLOps</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">ESTUDIO</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">Plataforma &amp; <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">MLOps</span></h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">LLMs (OpenAI, Anthropic, Google) · IA privada / on-premise · MLOps y LLMOps · Fine-tuning · Arquitectura empresarial de IA · Seguridad de modelos.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);max-width:440px;margin-left:auto;margin-right:auto">
+    <img src="assets/photos/rag-crop3.png" alt="Plataforma &amp; MLOps" style="display:block;width:100%;height:auto">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">La verdad incómoda del 90%</h2>
+    <p>El modelo es apenas el 5-10% de un sistema de IA en producción. El otro 90-95% es validación de datos, infraestructura, monitoreo, gobierno y los ciclos de mejora continua que mantienen las predicciones útiles después del primer día. MLOps es la disciplina que gestiona todo eso. Menos del 40% de las organizaciones escalan sus modelos más allá de pilotos — el cuello de botella no son los modelos, son las operaciones alrededor de ellos.</p>
+    <p>Ese es el punto de partida. La conversación empresarial sobre IA en 2026 es casi siempre sobre qué modelo usar. La pregunta que realmente importa es cómo llevar ese modelo a producción, mantenerlo, monitorearlo, gobernarlo y actualizarlo — semana tras semana, sin que se rompa, se desvíe o genere un incidente regulatorio.</p>
+
+    <h2>1. LLMs en 2026: el mercado que se diferenció</h2>
+    <p>El mercado de modelos de lenguaje dejó de ser un monopolio y se convirtió en un ecosistema con opciones claras para cada caso de uso:</p>
+    <p><strong>OpenAI (GPT-4o, o3, o1):</strong> liderazgo en adopción empresarial, integración nativa con el ecosistema Microsoft (Azure OpenAI, Copilot, Teams). Fuerte en generación de contenido, code completion y reasoning.</p>
+    <p><strong>Anthropic (Claude Sonnet, Opus, Haiku):</strong> arquitectura de Constitutional AI con enfoque en seguridad y alineación. Destaca en análisis de documentos largos (200K tokens de contexto), tareas de razonamiento complejo y código. Claude Code es la herramienta más adoptada por desarrolladores seniors en 2026 para tareas de alta complejidad.</p>
+    <p><strong>Google (Gemini 2.0/2.5 Pro, Flash):</strong> ventaja en integración con ecosistema Google Cloud (Vertex AI, BigQuery), multimodalidad nativa (texto, imagen, audio, video) y contexto de 1M de tokens. Flash ofrece la mejor relación costo/rendimiento para aplicaciones de alto volumen.</p>
+    <p><strong>Modelos open source (Llama 3, Mistral, Qwen):</strong> la alternativa para organizaciones con necesidad de control total sobre el modelo — sin cargos por token, sin datos saliendo de la infraestructura propia. Requieren equipo técnico capaz de gestionar la infraestructura de inferencia.</p>
+    <p>La arquitectura de enrutamiento de modelos es el diferenciador de las implementaciones maduras en 2026: sistemas de routing semántico que derivan consultas sencillas a un modelo pequeño y económico, y reservan el modelo avanzado para tareas complejas — optimizando costo sin degradar calidad. No usar el modelo más grande para tareas de clasificación básica es el principio que más impacto tiene en la factura mensual.</p>
+
+    <h2>2. IA privada / on-premise: cuándo la nube pública no alcanza</h2>
+    <p>El problema central: cada prompt enviado a ChatGPT, Claude o Gemini sale de tu red. Para organizaciones que manejan datos regulados, confidenciales o propietarios, eso crea riesgos inaceptables de privacidad, cumplimiento y costo. Una factura de API que empezó en $15,000 el primer mes llegó a $60,000 en el mes tres — más de $700,000 anuales antes de costos ocultos. El despliegue privado empieza a justificarse económicamente a partir de 8,000+ conversaciones diarias versus una API gestionada.</p>
+    <p>Los LLMs se despliegan localmente mediante contenedorización con Docker, orquestación con Kubernetes y entrega a través de motores de inferencia optimizados como vLLM o TGI. El despliegue on-premise proporciona control total de los datos, personalización y cumplimiento, a cambio de gestionar internamente los costos de hardware, el mantenimiento y la complejidad operativa.</p>
+    <p>Los sectores donde la IA privada es obligatoria, no opcional: banca y seguros (CNBV, CNSF), salud (NOM-024, datos de expedientes clínicos), gobierno (soberanía digital), manufactura con propiedad intelectual de diseño del cliente, y cualquier organización sujeta a LFPDPPP con datos sensibles de terceros.</p>
+    <p>El árbol de decisión práctico: cuando operas datos médicos, legales o financieros → arquitectura on-premise aislada de la nube pública. Cuando una tarea única falla repetidamente → orquestación multi-agente. Cuando el costo de API se dispara → router semántico que dirige consultas simples a modelos open source locales.</p>
+
+    <h2>3. MLOps y LLMOps: la misma disciplina, distintos desafíos</h2>
+    <p>MLOps gestiona modelos predictivos tradicionales. LLMOps cubre IA generativa y modelos de fundación — ingeniería de prompts, monitoreo de alucinaciones, sistemas RAG. En 2026, las plataformas unificadas gestionan ambos.</p>
+    <p><strong>Lo que es diferente en LLMOps:</strong> versionado de prompts reemplaza al versionado de código como flujo de trabajo crítico — un cambio de prompt puede cambiar el comportamiento del sistema tanto como un cambio de código. La evaluación de calidad generativa requiere frameworks que midan coherencia, fidelidad a la fuente y ausencia de alucinaciones, ya que las métricas tradicionales (accuracy, F1) no aplican. La gestión de costos de inferencia es crítica — el costo por token de un LLM es órdenes de magnitud mayor que el de un modelo predictivo tradicional; FinOps para IA es una función nueva que 2026 está formalizando. Y existe deriva de comportamiento: los LLMs pueden cambiar con cambios de sistema prompt, temperatura, o actualizaciones del proveedor, sin que ninguna métrica tradicional lo detecte.</p>
+    <p>Los equipos con MLOps maduro reportan lanzamientos 10 veces más rápidos y reducciones de costo de infraestructura del 40-60%. El stack MLOps moderno: MLflow o Weights &amp; Biases para tracking de experimentos; Kubeflow o Vertex AI Pipelines para orquestación; Prometheus + Grafana para monitoreo; y un model registry centralizado como fuente de verdad sobre qué modelo está en producción y con qué versión.</p>
+    <p>El problema de shadow AI: las unidades de negocio despliegan modelos en cuentas personales porque los procesos oficiales tardan semanas. La solución no son restricciones más estrictas — es hacer que el despliegue conforme sea más rápido que los workarounds.</p>
+
+    <h2>4. Fine-tuning: cuándo RAG no alcanza</h2>
+    <p>La primera pregunta que toda organización debe resolver antes de considerar fine-tuning: ¿el modelo necesita conocer datos de la empresa, o necesita aprender a comportarse diferente?</p>
+    <p>RAG (Retrieval-Augmented Generation) resuelve el primer problema: conecta el modelo a los datos internos sin reentrenarlo. Es más rápido, más barato y más actualizable. Fine-tuning resuelve el segundo: cambia el comportamiento base del modelo — tono, formato de respuesta, dominio especializado, seguimiento de instrucciones específicas.</p>
+    <p>Las técnicas de fine-tuning eficiente en parámetros — LoRA (Low-Rank Adaptation) y QLoRA (versión cuantizada) — reducen dramáticamente los requisitos computacionales: en lugar de actualizar todos los parámetros del modelo (billones), LoRA añade matrices de adaptación pequeñas que representan solo el 0.1-1% de los parámetros originales. El modelo base queda intacto; solo se actualizan los adaptadores.</p>
+    <p>Los casos donde fine-tuning sí vale: dominio técnico muy específico que no está bien representado en el preentrenamiento (terminología legal local, normativa fiscal mexicana, documentación técnica propietaria), formato de salida muy estructurado que los prompts no logran consistentemente, y latencia que requiere un modelo más pequeño con el conocimiento del dominio internalizado.</p>
+    <p>Pipelines de fine-tuning empresarial: preprocesamiento e indexación completamente on-premise, índices vectoriales privados (pgvector, Weaviate, Qdrant) para retrieval sobre documentación interna, y control de accesos y trazabilidad de cada consulta. Sin estos componentes, el fine-tuning produce un modelo que no se puede auditar, actualizar ni gobernar.</p>
+
+    <h2>5. Arquitectura empresarial de IA: las capas que sostienen todo</h2>
+    <p>La arquitectura empresarial de IA no es "conectar la API del LLM a la aplicación". Es una pila de capas que incluye: bases de datos vectoriales para contexto RAG (Pinecone, Weaviate, pgvector); frameworks de orquestación para coordinar agentes y herramientas (LangChain, LlamaIndex); sistemas de routing para seleccionar dinámicamente el modelo correcto según la tarea; observabilidad LLMOps para métricas de latencia, costo y calidad (MLflow, LangSmith, Opik); y una AI Gateway centralizada que gobierna el acceso a todos los modelos.</p>
+    <p>Los tres errores de arquitectura más frecuentes en 2026: <strong>el síndrome de la navaja suiza</strong> — usar el LLM más caro para tareas de clasificación básica, cuando un router de modelos que deriva consultas simples a un SLM local puede reducir el costo de inferencia en 80% sin degradar la experiencia. <strong>El acaparador de contexto</strong> — llenar la ventana del modelo con datos inútiles hace que el modelo "se pierda en el medio"; la fragmentación inteligente y la búsqueda híbrida (semántica + keyword) son la solución. <strong>La ausencia de memoria episódica</strong> — agentes que no recuerdan acciones pasadas entran en bucles; la solución es usar bases de datos como memoria externa a largo plazo, no confiar en el contexto de la conversación.</p>
+
+    <h2>6. Seguridad de modelos: el OWASP LLM Top 10</h2>
+    <p>La EU AI Act y las leyes de accountability algorítmica requieren auditabilidad, explicabilidad y pruebas de sesgo. Las multas alcanzan el 6% de los ingresos globales. La gobernanza de modelos dejó de ser overhead y es gestión de riesgo.</p>
+    <p>El OWASP LLM Top 10 — la referencia de seguridad específica para sistemas con LLMs — identifica las vulnerabilidades críticas: <strong>prompt injection</strong> (un usuario o documento inyecta instrucciones que hacen que el modelo ignore sus restricciones; la defensa es arquitectural — validación de entrada/salida, sandboxing de herramientas, y no confiar en el contenido del usuario como instrucción); <strong>fuga de datos sensibles</strong> (el modelo puede revelar información de entrenamiento o del contexto de otros usuarios; la defensa: filtros de PII, RBAC en los endpoints, y cifrado AES-256 en reposo + TLS 1.3 en tránsito); <strong>excessive agency</strong> (agentes con demasiados permisos que ejecutan acciones no intencionadas con impacto real; la defensa: principio de mínimo privilegio y supervisión humana obligatoria en acciones irreversibles); y <strong>data poisoning</strong> (los conjuntos de datos y el modelo deben protegerse de datos contaminados, ataques de servicio o usuarios no autorizados, con controles de acceso por roles, auditoría de los datos de fine-tuning, y evaluación de sesgo continua).</p>
+    <p>Un problema real que surgió en una auditoría de cumplimiento: una empresa de servicios financieros descubrió 247 modelos en producción — solo 89 estaban documentados. Los registros de modelos obligatorios y las políticas de gobernanza previenen esto, pero solo si se aplican antes de que el sprawl ocurra.</p>
+
+    <h2>El número que define la madurez</h2>
+    <p>En 2026, menos del 40% de las organizaciones escalan sus iniciativas de IA más allá de pilotos. El cuello de botella consistente en todos los sectores es el mismo: no los modelos, sino la falta de infraestructura operacional para desplegarlos, monitorearlos y gobernarlos en producción. MLOps y LLMOps son la disciplina que convierte experimentos de data science en infraestructura de negocio. Sin ella, los proyectos de IA se quedan en pilotos eternos — no por falta de talento técnico, sino por falta de la estructura operativa que los lleva a producción y los mantiene ahí.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: TrueFoundry LLM On-Premise 2026, Intuz Private LLM Enterprise Guide 2026, MentorDay Arquitecturas LLM 2026, HyScaler MLOps 2026 Guide, PrepZee MLOps Landscape 2026, Insight Partners LLMOps Enterprise, Red Hat MLOps, Rogue Waves AI Private IA, TrueFoundry LLMOps Architecture — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Cuántos modelos tienes en producción — y cuántos están documentados?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Evaluamos tu stack MLOps/LLMOps antes de proponer un modelo más.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
