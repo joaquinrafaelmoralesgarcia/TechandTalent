@@ -1,0 +1,24 @@
+# Tech and Talent Services — Static Site
+
+# Serve index.html by default
+DirectoryIndex index.html
+
+# Redirect old WordPress URLs to home
+RewriteEngine On
+
+# If the file doesn't exist, redirect to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^wp-.* / [R=301,L]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Cache static assets
+<FilesMatch "\.(png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|js|css)$">
+  Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# Disable directory listing
+Options -Indexes

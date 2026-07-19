@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevSecOps — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art ul{margin:0 0 16px;padding-left:22px}
+  .art li{font-size:16px;line-height:1.8;color:#c3cbdd;margin-bottom:6px}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.html" style="color:#eef2f9">Servicios</a>
+    <a class="navlink" href="insights.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="servicios.html" style="color:#38bdf8">Servicios</a> / DevSecOps</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">SDLC · 06</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">Dev<span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">SecOps</span></h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Detección y remediación de vulnerabilidades · SAST/DAST · Dependencias · Secretos expuestos · Compliance.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/devsecops2-crop.png" alt="DevSecOps" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">El problema que DevSecOps existe para resolver</h2>
+    <p>El costo de corregir una vulnerabilidad de seguridad aumenta exponencialmente cuanto más tarde se descubre. Una vulnerabilidad encontrada durante la revisión del código cuesta $500 para solucionarla. La misma vulnerabilidad encontrada en producción cuesta entre $15,000 y $30,000 si se tiene en cuenta la respuesta a incidentes, la aplicación de parches, las pruebas y la posible reparación de infracciones. Esa diferencia de 30-60x es el argumento económico de DevSecOps.</p>
+    <p>En 2026, se reportaron más de 52,000 nuevas CVE, y el 72% de las brechas de seguridad se remontaron a vulnerabilidades de software explotables. El volumen hace imposible el triaje manual — y es exactamente donde la IA cambia la ecuación.</p>
+
+    <h2>1. SAST: análisis estático con precisión real, no ruido</h2>
+    <p>SAST (Static Application Security Testing) analiza el código fuente en busca de vulnerabilidades antes de que se ejecute. El problema histórico: demasiados falsos positivos que abruman al equipo y hacen que las alertas se ignoren.</p>
+    <p>Las herramientas líderes hoy combinan triaje con IA para eliminar la mayor parte del ruido, de modo que el equipo no se ve inundado de falsos positivos, con correcciones de un clic que autogeneran un PR de parche para actualizar una librería vulnerable o una imagen base de Docker.</p>
+    <p>El diferenciador de 2026 no es detectar más vulnerabilidades — es detectar las que importan. La priorización basada en riesgos combina la explotabilidad, la accesibilidad al código vulnerable en runtime, y el contexto empresarial para sacar a la luz lo que realmente importa. Un CVE crítico en una dependencia que no llega a runtime no merece la misma urgencia que un CVE moderado en un endpoint público.</p>
+    <p><strong>Integración IDE.</strong> La tendencia en 2026 es SAST que corre dentro del IDE mientras el desarrollador escribe — no como un gate bloqueante al final del pipeline. El desarrollador ve la vulnerabilidad en el mismo momento en que la introduce, con la corrección sugerida en contexto.</p>
+
+    <h2>2. DAST: lo que el código no puede ver</h2>
+    <p>DAST (Dynamic Application Security Testing) ataca la aplicación en ejecución para encontrar vulnerabilidades que el análisis estático no puede detectar: errores de autenticación, lógica de negocio incorrecta, configuraciones inseguras, inyecciones que solo se manifiestan en runtime.</p>
+    <p>Cuando los equipos construyen aplicaciones a velocidad de IA, la validación en runtime se vuelve más crítica que nunca — el código generado por IA introduce vulnerabilidades que los escáneres estáticos no siempre capturan.</p>
+    <p>La arquitectura que funciona: combinar resultados DAST y SAST para priorizar issues de alta confianza y alto impacto — reducir ruido al correlacionar hallazgos de ambas fuentes, y proporcionar evidencia a auditores de que las aplicaciones críticas han sido probadas dinámicamente.</p>
+
+    <h2>3. SCA y dependencias: el 80% del código que no escribiste</h2>
+    <p>La mayoría del código en una aplicación moderna no lo escribió el equipo — son dependencias de código abierto. Las plataformas de escaneo de bibliotecas de código abierto (SCA) mantienen bases de vulnerabilidades que a menudo señalan CVEs días antes que las bases públicas, con PRs automatizados para actualizar dependencias vulnerables.</p>
+    <p>El riesgo que más crece es la cadena de suministro de software. Un paquete comprometido puede afectar a miles de aplicaciones. Las herramientas modernas de SCA no solo escanean por vulnerabilidades conocidas — también detectan:</p>
+    <ul>
+      <li><strong>Typosquatting:</strong> paquetes con nombres similares a los legítimos, diseñados para ser descargados por error.</li>
+      <li><strong>Licencias incompatibles:</strong> dependencias con licencias que crean riesgo legal en código propietario.</li>
+      <li><strong>Paquetes abandonados:</strong> sin mantenimiento activo, sin parches para vulnerabilidades futuras.</li>
+      <li><strong>Dependencias transitivas:</strong> las vulnerabilidades de las dependencias de tus dependencias.</li>
+    </ul>
+    <p>El pipeline DevSecOps recomendado: commit → SAST automático → escaneo de dependencias (SCA) con bloqueo de librerías vulnerables → validación de IaC → build y pruebas → escaneo de contenedores y firma digital → despliegue → monitoreo post-despliegue.</p>
+
+    <h2>4. Secretos expuestos: el riesgo que se puede prevenir completamente</h2>
+    <p>Una clave de API hardcodeada en el código, un token de base de datos en el historial de Git, una contraseña en un archivo de configuración subido por error — los secretos expuestos son la causa de algunas de las brechas más costosas y también la más prevenible.</p>
+    <p>La detección de secretos debe cubrir todo el SDLC: el historial de Git (un secreto eliminado en un commit sigue existiendo en el historial), los pipelines de CI/CD, los contenedores y los archivos de configuración. Un secreto subido hace tres años puede ser la puerta de entrada de un ataque hoy.</p>
+    <p>La gestión automática de secretos tiene dos partes: detección (encontrar el secreto donde esté) y respuesta (revocar el secreto comprometido de forma inmediata y trazable, sin intervención manual). La higiene de secretos se vuelve totalmente automática y trazable.</p>
+    <p>La práctica más efectiva es el <strong>pre-commit hook</strong>: el escaneo de secretos ocurre antes de que el código se suba al repositorio, eliminando el problema en la fuente. Herramientas de código abierto corren en milisegundos y bloquean el commit si detectan un patrón de secreto conocido.</p>
+    <p><strong>El dato que más sorprende:</strong> los monitores de filtraciones públicas verifican si tus secretos han sido filtrados en repositorios públicos — repositorios que el equipo cree privados pueden haberse hecho públicos accidentalmente, y el daño ya está hecho. La detección retrospectiva sobre el historial de repositorios es tan importante como la detección en tiempo real.</p>
+
+    <h2>5. Compliance: de auditoría trimestral a evidencia continua</h2>
+    <p>Compliance como código: codificar los requisitos de cumplimiento en comprobaciones automatizadas que se ejecutan con cada despliegue. En lugar de preparar evidencia para una auditoría cada seis meses, el pipeline genera evidencia de compliance como subproducto de cada ciclo de entrega.</p>
+    <p>El mapeo de cumplimiento con NIST, CIS, ISO 27001, SOC 2, OWASP y OpenSSF se genera automáticamente. El auditor ya no espera que el equipo "prepare la documentación" — el dashboard de seguridad muestra en tiempo real la cobertura de análisis, el estado de vulnerabilidades y la evolución histórica de cada repositorio.</p>
+    <p>Las organizaciones con prácticas DevSecOps maduras implementan más rápido porque la seguridad es automatizada en lugar de manual. El pipeline automatizado de evidencia de cumplimiento satisface a los auditores de GDPR, NIS2, ISO 27001 y SOC 2 sin esfuerzo adicional del equipo.</p>
+    <p>En sectores regulados (banca, seguros, salud, gobierno), esto cambia la conversación con el regulador: de "aquí está el reporte del escaneo que corrimos antes del release" a "aquí está el dashboard en tiempo real con el historial completo de seguridad de cada despliegue".</p>
+
+    <h2>De detectar a remediar: el cambio más importante de 2026</h2>
+    <p>El salto que distingue el DevSecOps de 2026 del de años anteriores no es mejor detección — es <strong>remediación automatizada</strong>.</p>
+    <p>El futuro de DevSecOps no es solo encontrar vulnerabilidades; es solucionarlas. Los motores de remediación con IA generan parches de código precisos para la mayoría de las vulnerabilidades estándar de OWASP, abriendo PRs automáticamente con correcciones de código — sugieren y aplican correcciones seguras en cuanto aparece una vulnerabilidad, mostrando cómo solucionarla y ayudando a aplicar el cambio sin ralentizar el sistema.</p>
+    <p>El ciclo completo: escáner detecta → IA prioriza por riesgo real → agente genera el parche → desarrollador revisa y aprueba → pipeline re-testea automáticamente. Lo que antes tomaba días o semanas en el backlog de seguridad puede resolverse en horas.</p>
+
+    <h2>Por dónde empezar</h2>
+    <p>Tres acciones con mínima fricción que detectan la mayoría de vulnerabilidades comunes: agregar SAST y SCA al pipeline principal de CI, implementar detección de secretos como pre-commit hook, y escanear imágenes de contenedores antes del despliegue. Ampliar a DAST, protección en runtime y aplicación de políticas a medida que el equipo madure.</p>
+    <p>La seguridad que llega tarde frena la entrega. La seguridad integrada desde el inicio la acelera — porque los problemas se detectan cuando son baratos de resolver, no cuando se convierten en incidentes de producción.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: Xygeni SAST/remediación 2026, Aikido DevSecOps Tools 2026, Plexicus DevOps Security Tools review, Checkmarx Top 18 DevSecOps Tools AI Era, Opsio DevSecOps Guide 2026, Qualoom CI/CD Secure Pipelines 2026 — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Detectas vulnerabilidades o ya las remedias automáticamente?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Evaluamos tu pipeline y priorizamos por riesgo real, no por volumen de alertas.</p>
+  <a href="contacto.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.html">SDLC con IA</a><a class="navlink" href="servicios.html">Automatización empresarial</a><a class="navlink" href="servicios.html">Modernización legacy</a><a class="navlink" href="servicios.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.html">Telecom</a><a class="navlink" href="sectores.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.html">Nosotros</a><a class="navlink" href="casos.html">Casos de éxito</a><a class="navlink" href="insights.html">Insights</a><a class="navlink" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

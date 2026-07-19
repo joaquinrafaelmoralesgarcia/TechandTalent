@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAG Empresarial — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+
+@media (max-width:860px){
+  div[style~="56px"]{margin-left:20px !important;margin-right:20px !important;padding-left:16px !important;padding-right:16px !important}
+  div[style*="gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0"]{display:none !important}
+  div[style*="gap:14px;flex-shrink:0;white-space:nowrap"] > span{display:none !important}
+  [style*="display:grid"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:32px !important}
+  img[style*="object-fit:cover"]{height:220px !important}
+  h1{font-size:28px !important;line-height:1.18 !important}
+  h2{font-size:22px !important;line-height:1.28 !important}
+  .mt{font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important}
+  img{max-width:100%}
+}
+@media (max-width:480px){
+  h1{font-size:24px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#eef2f9">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#0f3a2a 0%,#081e18 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(110,231,183,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#6ee7b7">Home</a> / <a class="navlink" href="insights.dc.html" style="color:#6ee7b7">Insights</a> / RAG empresarial</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#6ee7b7;margin-bottom:16px">PUNTO DE VISTA</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">RAG empresarial: tu conocimiento, potenciado por <span style="background:linear-gradient(120deg,#6ee7b7,#34d399);-webkit-background-clip:text;background-clip:text;color:transparent">IA</span></h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Un punto de vista sobre el activo más subutilizado de tu empresa.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/rag-team-crop.png" alt="RAG empresarial" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">El problema que nadie nombra correctamente</h2>
+    <p>Cada empresa tiene el mismo problema y lo describe de formas distintas: "Perdemos tiempo buscando información que ya tenemos." "El cliente pregunta algo y el agente no sabe dónde buscar la respuesta." "El nuevo que entró lleva tres semanas preguntando cosas que están en los manuales." "Tenemos 12 años de contratos, propuestas y casos de éxito que nadie consulta porque no se puede buscar en ellos."</p>
+    <p>El problema no es falta de información. Es falta de acceso al conocimiento que ya existe. Y esa diferencia — entre tener información y poder usarla — es exactamente lo que RAG resuelve.</p>
+
+    <h2>Qué es RAG, sin rodeos</h2>
+    <p>RAG (Retrieval-Augmented Generation) combina dos sistemas: un motor de búsqueda semántica que encuentra los fragmentos de texto más relevantes para una pregunta, y un modelo de lenguaje que genera una respuesta coherente a partir de esos fragmentos. Cuando el usuario hace una pregunta, el sistema la convierte en un vector y lo compara con los embeddings de todos los documentos indexados; los fragmentos más similares se recuperan y el LLM genera la respuesta basada en esos datos reales.</p>
+    <p>La diferencia con usar ChatGPT abierto en el navegador: cuando le pides a ChatGPT o Claude que responda una pregunta sobre tu empresa, sobre un documento interno o sobre datos de ayer, el modelo se inventa la respuesta o admite que no tiene esa información. RAG resuelve exactamente ese problema: antes de generar una respuesta, busca y recupera la información relevante de tus fuentes de datos, y la incluye en el contexto del LLM para que responda con datos reales y verificables. Es la diferencia entre un asistente que alucina y uno que cita fuentes.</p>
+
+    <h2>Por qué RAG y no fine-tuning</h2>
+    <p>Es la pregunta que más confunde. La respuesta práctica: en el 90% de los casos B2B reales, RAG es la elección correcta sobre fine-tuning por cuatro razones: cuesta entre 5 y 20 veces menos de implementar; el conocimiento se actualiza al instante al subir un nuevo documento (el fine-tuning requiere re-entrenamiento); RAG cita fuentes — esencial para auditoría, cumplimiento regulatorio y confianza del usuario — y el fine-tuning no; y RAG soporta millones de documentos mientras que el fine-tuning está limitado por el tamaño del dataset.</p>
+    <p>El fine-tuning solo es preferible cuando necesitas cambiar el estilo o formato del modelo, o cuando el dominio es muy cerrado y el corpus muy estable. En la práctica, muchas implementaciones empresariales combinan ambos: un modelo fine-tuned para el tono y dominio, con RAG para los datos concretos.</p>
+    <p>Dicho de forma directa: el manual de procedimientos que el área de operaciones actualiza cada trimestre no puede ir al fine-tuning — estarías re-entrenando el modelo cada tres meses. Con RAG, lo subes y el sistema lo conoce en minutos.</p>
+
+    <h2>Dónde genera valor real en la empresa</h2>
+    <p>No todo el conocimiento de una empresa vale igual como base de RAG. Los casos donde el impacto es más inmediato y medible:</p>
+    <p><strong>Soporte interno y onboarding.</strong> Un copiloto interno con toda la documentación operativa de la empresa, accesible desde el mismo día de incorporación, reduce el tiempo medio a productividad plena de semanas a días — además de identificar procedimientos mal documentados que nadie entendía sin preguntar, y que se reescriben como subproducto del sistema. El nuevo empleado pregunta al sistema en lugar de interrumpir al senior que tiene que cerrar una propuesta.</p>
+    <p><strong>Soporte al cliente con respuestas verificables.</strong> RAG elimina hasta el 80% de respuestas incorrectas frente a un LLM genérico. Las implementaciones correctas mejoran la precisión de respuestas empresariales en un 67%. El agente que antes tardaba 8 minutos buscando en tres sistemas distintos ahora tiene la respuesta en 15 segundos, con la fuente citada para que pueda verificarla.</p>
+    <p><strong>Gestión del conocimiento en consultoría y servicios profesionales.</strong> Una empresa de servicios profesionales que implementa RAG sobre su repositorio de conocimiento indexa archivos de proyectos, CRM y bases de datos de expertos. Los consultores pueden formular preguntas como "encuentra casos prácticos sobre optimización de cadena de suministro para clientes de retail con un valor de proyecto superior a $2M" y recibir un resumen sintetizado con links a los documentos originales. El tiempo de elaboración de propuestas puede reducirse a la mitad.</p>
+    <p><strong>Cumplimiento y auditoría en sectores regulados.</strong> En un proyecto de 6 semanas con una institución financiera regulada, RAG sobre 1,200 documentos de normativa interna respondió correctamente el 93% de las consultas de prueba con trazabilidad completa a la fuente. Cuando el auditor pregunta "¿qué política aplica en este caso?", el sistema no opina — cita el documento exacto, la versión vigente, y el párrafo específico.</p>
+
+    <h2>El número que más importa antes de empezar</h2>
+    <p>El 60% de los proyectos RAG empresariales no llegan a producción. No por la tecnología, sino porque caen en errores predecibles. El más frecuente y más costoso: <strong>la calidad del dato decide todo.</strong> Precios desactualizados, manuales de versiones antiguas o contratos vencidos contaminan todo el sistema. El RAG devolverá información incorrecta con total confianza, lo que es peor que no tener respuesta. Una empresa que indexa 10 años de documentos sin revisar cuáles están vigentes no tiene un sistema de conocimiento — tiene un sistema de confusión semántica muy bien implementado.</p>
+    <p>El segundo error más frecuente: lo que funcionaba con 50 documentos se rompe con 50,000. Lo que tardaba 2 segundos en demo tarda 90 en producción. El salto de prototipo a producción no es un ajuste de parámetros — es un rediseño arquitectónico completo.</p>
+
+    <h2>El punto de vista que más importa</h2>
+    <p>La mayoría de las empresas que adoptan RAG lo enmarcan como un proyecto de tecnología. Las que obtienen mayor retorno lo enmarcan como un proyecto de conocimiento.</p>
+    <p>La tecnología — la base vectorial, el modelo de embeddings, la capa de orquestación — es la parte más fácil. La parte difícil es responder tres preguntas antes de escribir la primera línea de código: <strong>¿Qué conocimiento queremos que el sistema tenga?</strong> No todo el repositorio histórico — el subconjunto curado, vigente y autorizado que un empleado experimentado consultaría para responder esta pregunta. <strong>¿Quién puede acceder a qué?</strong> El control de acceso debe aplicarse antes de la recuperación, no después de la generación. Si un documento no es visible para un usuario en SharePoint, debe ser invisible para el retriever RAG. Esto incluye control granular: datos sensibles ocultos incluso cuando los datos circundantes son accesibles. <strong>¿Cómo se mantiene actualizado?</strong> El sistema de RAG tiene la calidad del documento más desactualizado que indexa. Sin un proceso claro de cuándo se actualiza, quién es responsable de validar que la información es vigente, y cómo se retiran los documentos obsoletos, el sistema degrada con el tiempo.</p>
+
+    <h2>Cuánto cuesta en México y cuándo se recupera</h2>
+    <p>El costo de implementar RAG en México varía según la complejidad: implementación básica (chatbot interno con hasta 1,000 documentos): $150,000-$300,000 MXN; implementación mediana (múltiples fuentes, hasta 10,000 documentos): $300,000-$600,000 MXN; implementación avanzada (integración con ERP/CRM, despliegue on-premise, más de 10,000 documentos): $600,000-$1,500,000 MXN.</p>
+    <p>El ROI se recupera en menos de 4 meses en los casos con mayor impacto. El dolor del cliente no era "no tener IA" — era tener conocimiento disperso y nadie capaz de buscarlo rápido. RAG ataca exactamente ese dolor.</p>
+    <p>La inversión se justifica cuando hay al menos uno de estos tres síntomas en la empresa: empleados que repiten preguntas que ya tienen respuesta en algún documento, tiempo excesivo en búsqueda de información antes de responder a un cliente o tomar una decisión, y conocimiento crítico que solo vive en las personas y no en sistemas.</p>
+
+    <h2>La conclusión que nadie quiere escuchar</h2>
+    <p>El conocimiento de tu empresa ya existe. Ya lo generaste, ya lo pagaste, ya está en algún drive, en algún manual, en algún sistema de tickets. RAG no crea conocimiento nuevo — hace que el que ya tienes sea consultable en lenguaje natural, con citación de fuente, por cualquier persona de tu equipo.</p>
+    <p>El costo de no implementarlo no es visible en ninguna línea del balance — pero está en cada hora que un empleado pasa buscando algo que ya existe, en cada respuesta incorrecta que un agente da porque no encontró el documento correcto, y en cada propuesta que tarda tres días en lugar de uno porque nadie sabe dónde están los casos anteriores similares.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: Magokoro RAG Empresas México 2026, Javadex RAG LLMs Implementación 2026, ONExt RAG Producción 2026, Beltsys RAG Guía Completa 2026, Insights Lab RAG Empresarial México 2026, Erwin Salas RAG Empresas 2026, AddWebTech IA Empresa México 2026, YCP Renoir RAG Gestión Conocimiento — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#6ee7b7,#34d399);color:#052e21;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#052e21">¿Cuánto de tu conocimiento ya existe pero nadie puede buscarlo?</h2>
+  <p style="font-size:16px;color:rgba(5,46,33,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Identificamos el subconjunto de conocimiento correcto para tu primer sistema RAG.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#052e21;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

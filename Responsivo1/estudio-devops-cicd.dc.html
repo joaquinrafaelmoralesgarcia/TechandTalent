@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevOps / CI-CD — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+  .art ul{margin:0 0 16px;padding-left:22px}
+  .art li{font-size:16px;line-height:1.8;color:#c3cbdd;margin-bottom:6px}
+
+@media (max-width:860px){
+  x-dc > div{padding-left:16px !important;padding-right:16px !important;margin-left:0 !important;margin-right:0 !important}
+  x-dc > div[style*="16px 56px"]{padding-top:12px !important;padding-bottom:12px !important}
+  .ttnavlinks{display:none !important}
+  .ttnavright > span{display:none !important}
+  .ttnavright{gap:8px !important}
+  [style*="display:grid"],[style*="display: grid"]{grid-template-columns:1fr !important;gap:16px !important}
+  [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:30px !important;width:auto !important}
+  .ttlogotxt{font-size:14px !important}
+  .ttlogosub{font-size:9px !important;letter-spacing:.22em !important}
+  img[style*="object-fit"]{height:200px !important;width:100% !important;max-width:100% !important}
+  h1{font-size:26px !important;line-height:1.2 !important;max-width:100% !important}
+  h2{font-size:20px !important;line-height:1.28 !important;max-width:100% !important}
+  h3{font-size:17px !important}
+  p{font-size:15px !important;line-height:1.65 !important}
+  .art h2{font-size:20px !important;margin-top:28px !important}
+  .art p{font-size:15px !important;line-height:1.75 !important}
+  .mt{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important;white-space:normal}
+  a.btnp{padding:8px 12px !important;font-size:11.5px !important}
+  img{max-width:100%}
+  input,select,textarea{max-width:100% !important;width:100% !important;box-sizing:border-box !important}
+  video,iframe{max-width:100% !important}
+}
+@media (max-width:480px){
+  h1{font-size:22px !important;letter-spacing:-.005em !important}
+  h2{font-size:18px !important}
+  x-dc > div{padding-left:14px !important;padding-right:14px !important}
+  .ttlogotxt{font-size:13px !important}
+  .ttlogosub{display:none !important}
+  a.btnp{padding:7px 10px !important;font-size:11px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div class="ttlogotxt" style="font-weight:800;font-size:16px">Tech and Talent</div><div class="ttlogosub" style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div class="ttnavlinks" style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#eef2f9">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div class="ttnavright" style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="servicios.dc.html" style="color:#38bdf8">Servicios</a> / DevOps / CI-CD</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">SDLC · 05</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">DevOps / <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">CI-CD</span></h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Pipelines automáticos · Gestión de releases · Análisis predictivo de fallas · Rollback inteligente · IaC.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/devops-gauge-crop2.png" alt="DevOps / CI-CD" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">La diferencia entre automatizar y hacer inteligente</h2>
+    <p>Los pipelines de CI/CD llevan años automatizando compilaciones y despliegues. Pero automatizar no es lo mismo que hacer inteligente. La automatización tradicional sigue reglas estáticas: si el código cambia, el pipeline no reflexiona, no aprende, no se adapta. Ejecuta exactamente lo que le dijiste, incluso si no tiene sentido. ¿Necesitas correr todos los tests de integración por un cambio menor en el frontend? El pipeline no lo sabe. Solo obedece.</p>
+    <p>Con IA, los pipelines empiezan a tomar decisiones basadas en datos y contexto: selección inteligente de pruebas, predicción de riesgo por PR, ajuste dinámico de recursos, y análisis de causa raíz automatizado cuando algo falla. Es el salto de pipeline a pipeline inteligente.</p>
+
+    <h2>1. Pipelines automáticos: de secuencia rígida a flujo adaptativo</h2>
+    <p>Un pipeline tradicional corre los mismos pasos en el mismo orden para cada commit. Un pipeline inteligente adapta lo que ejecuta según el riesgo del cambio.</p>
+    <p>Con análisis predictivo integrado en Azure DevOps, el pipeline puede: asignar a cada PR un puntaje de probabilidad de falla basado en métricas de compilación, resultados de pruebas, cobertura de código y tiempos de despliegue de los últimos seis meses; ajustar automáticamente la cantidad de agentes según la duración estimada de cada job; y enfocar las revisiones de código en los PRs con mayor riesgo, optimizando el esfuerzo de QA en hasta un 40%.</p>
+    <p>Los modelos de ML pueden analizar fallas históricas para predecir conflictos de integración antes de que ocurran, agilizando los flujos de trabajo ágiles. La IA en los pipelines permite la selección inteligente de pruebas, la depuración automatizada y las compilaciones autorreparables, reduciendo la intervención humana y las tasas de error.</p>
+    <p>El resultado concreto: pipelines que corren más rápido (menos tests irrelevantes), fallan por razones críticas (no por flakiness), y cuando fallan, ya traen el análisis de causa raíz en el log.</p>
+
+    <h2>2. Gestión de releases: de ventana de mantenimiento a despliegue continuo</h2>
+    <p>Un pipeline mal diseñado puede añadir horas a cada release; uno bien diseñado permite desplegar decenas de veces al día con rollback automático. La gestión de releases con IA tiene tres componentes:</p>
+    <p><strong>Selección dinámica de suite de pruebas.</strong> En vez de correr la suite completa en cada PR (que puede tomar horas), la IA identifica qué módulos se ven afectados por el cambio y ejecuta solo las pruebas relevantes. El tiempo de pipeline se reduce sin degradar la cobertura de los caminos críticos.</p>
+    <p><strong>Gates de calidad automáticos.</strong> En lugar de que un humano decida si el build está listo para pasar a producción, el pipeline evalúa automáticamente: cobertura de tests, tasa de defectos, métricas de rendimiento, análisis de seguridad (SAST/DAST) y compara contra la línea base. Si pasa todos los gates, avanza; si no, se detiene con el diagnóstico específico.</p>
+    <p><strong>Feature flags y despliegues progresivos.</strong> La IA monitorea el comportamiento del nuevo release en el 1% del tráfico, compara métricas clave (latencia, tasa de error, conversión) contra la versión anterior, y decide si continuar el rollout o revertir automáticamente — sin intervención humana en el escenario normal.</p>
+
+    <h2>3. Análisis predictivo de fallas: antes de que el usuario lo note</h2>
+    <p>AIOps combina DevOps y Machine Learning para lograr monitoreo predictivo en tiempo real: el sistema avisa que un microservicio específico mostrará un aumento del 30% en la latencia en los próximos 15 minutos, antes de que un solo usuario lo experimente.</p>
+    <p>La arquitectura AIOps para pipelines CI/CD se basa en tres componentes: Prometheus como colector de métricas en tiempo real, Grafana como capa de visualización y alertas, y modelos de Machine Learning como capa predictiva que detecta patrones antes de que se conviertan en incidentes.</p>
+    <p>Las capacidades concretas: detección de anomalías automática, correlación de alertas para reducir ruido (una sola causa raíz puede generar cientos de alertas en un sistema de microservicios), y predicción de cuellos de botella antes de que ocurran. Al pasar de un enfoque reactivo a uno proactivo, aumenta la disponibilidad, se reducen los tiempos de respuesta ante incidencias y mejora la experiencia del usuario.</p>
+    <p>El análisis de causa raíz asistido por IA examina automáticamente los logs y mensajes de error usando NLP para identificar rápidamente la causa subyacente de un defecto, acelerando significativamente la resolución de problemas y reduciendo el tiempo medio de resolución de incidentes (MTTR).</p>
+
+    <h2>4. Rollback inteligente: revertir sin deshacer</h2>
+    <p>El rollback tradicional es una operación binaria: se regresa a la versión anterior. Con IA, el rollback puede ser quirúrgico:</p>
+    <p><strong>Detección automática de regresión.</strong> El sistema compara en tiempo real las métricas del nuevo release con las del anterior. Si detecta degradación estadísticamente significativa en tasa de error, latencia p99 o conversión, activa el rollback sin esperar a que alguien lo note.</p>
+    <p><strong>Rollback parcial en canary.</strong> Si el problema solo afecta a un segmento (un tipo de dispositivo, una región, un segmento de usuarios), el rollback no revierte para todos — solo para los afectados, mientras el análisis continúa para determinar si el problema es sistémico.</p>
+    <p><strong>Post-mortem asistido.</strong> Después de un rollback, la IA genera el análisis de causa raíz preliminar: qué cambió, qué métrica degradó primero, qué tests habrían detectado el problema antes. Convierte cada incidente en aprendizaje estructurado para el siguiente ciclo.</p>
+
+    <h2>5. IaC: la infraestructura que se versiona como código</h2>
+    <p>Infrastructure as Code (IaC) es la práctica de gestionar infraestructura — servidores, redes, bases de datos, almacenamiento — usando código en lugar de procesos manuales. En 2026, si tu infraestructura se define en archivos de configuración versionables, puedes reproducir ambientes completos en minutos; si la configuras manualmente en consolas, cada despliegue es una aventura impredecible y costosa.</p>
+    <p>IaC resuelve tres problemas críticos:</p>
+    <p><strong>Configuration drift.</strong> Los ambientes de desarrollo, staging y producción divergen con el tiempo cuando se configuran manualmente. Con IaC declarativa, el mismo archivo de configuración define los tres — el drift es imposible porque el estado deseado está en código.</p>
+    <p><strong>Reproducibilidad.</strong> Reconstruir un ambiente después de un incidente no depende del conocimiento de una persona específica — es una operación repetible. La misma configuración que define producción puede recrearlo desde cero en minutos.</p>
+    <p><strong>Auditabilidad.</strong> Cada cambio de infraestructura es revisado, aprobado y versionado como código, con historial completo en el repositorio — lo que facilita demostrar control a auditores y reguladores.</p>
+    <p>Terraform es el estándar actual con soporte multi-cloud (AWS, Azure, GCP y más de 500 proveedores), lenguaje HCL declarativo, integración nativa con CI/CD, y gestión de estado que rastrea los cambios. En 2026, los enfoques híbridos — Terraform para aprovisionamiento + Ansible para configuración + Spacelift para orquestación + Checkov para seguridad — son cada vez más comunes.</p>
+    <p>La IA sobre IaC: herramientas como Kubiya automatizan tareas rutinarias como análisis de registros o aprovisionamiento de recursos. El 80% de los repositorios de GitHub se enfrentan a flujos de trabajo inseguros en su IaC — herramientas de escaneo automatizado como Checkov y Terrascan detectan misconfiguraciones antes del despliegue, convirtiendo la seguridad en un gate del pipeline.</p>
+
+    <h2>Las métricas DORA como norte</h2>
+    <p>El marco DORA (Deployment Frequency, Lead Time for Changes, Change Failure Rate, Time to Restore Service) sigue siendo el estándar para medir el desempeño de entrega. Los equipos élite en 2026:</p>
+    <ul>
+      <li>Despliegan múltiples veces al día (vs. una vez por mes en equipos de bajo rendimiento).</li>
+      <li>Tienen Lead Time de menos de una hora (vs. más de 6 meses).</li>
+      <li>Change Failure Rate menor al 5% (vs. 46-60%).</li>
+      <li>Time to Restore menor a una hora (vs. más de una semana).</li>
+    </ul>
+    <p>La IA en el pipeline contribuye a cada una de esas métricas — pero solo si el foundation está sólido: control de versiones disciplinado, tests confiables, IaC para ambientes reproducibles y cultura de despliegue frecuente. La IA amplifica las buenas prácticas existentes; no compensa la ausencia de ellas.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: Executrain Azure DevOps + IA, SEIDOR Automatización Inteligente CI/CD, DiSa Consultoría Pipelines CI/CD, Codemotion AIOps Monitoreo Predictivo, Nivelics Herramientas DevOps 2026, DonWeb IaC 2026, Carmatec Top 10 IaC Tools 2026, Vermont Solutions IaC regulated environments, Atlassian IaC, Visure Solutions CICD — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Tu pipeline obedece reglas fijas, o toma decisiones con datos?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Medimos tus métricas DORA antes de sumar más automatización.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

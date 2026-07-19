@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosotros — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+
+@media (max-width:860px){
+  div[style~="56px"]{margin-left:20px !important;margin-right:20px !important;padding-left:16px !important;padding-right:16px !important}
+  div[style*="gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0"]{display:none !important}
+  div[style*="gap:14px;flex-shrink:0;white-space:nowrap"] > span{display:none !important}
+  [style*="display:grid"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:32px !important}
+  img[style*="object-fit:cover"]{height:220px !important}
+  h1{font-size:28px !important;line-height:1.18 !important}
+  h2{font-size:22px !important;line-height:1.28 !important}
+  .mt{font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important}
+  img{max-width:100%}
+}
+@media (max-width:480px){
+  h1{font-size:24px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#eef2f9">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:78px 56px 66px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 25%,#12305e 0%,#0a1530 45%,#070b16 80%)">
+  <div style="position:absolute;inset:0;background:url('assets/img/cta-band.png') center/cover;opacity:.4;mix-blend-mode:screen"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / Nosotros</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:58px;line-height:1.04;letter-spacing:-.015em;margin:0;max-width:900px">No implementamos IA por moda. La aplicamos <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">donde genera retorno</span>.</h1>
+    <p style="font-size:18px;line-height:1.6;color:#aab6d1;margin:26px 0 0;max-width:660px">Somos una consultoría de inteligencia artificial enfocada en resultados de negocio: eficiencia operativa, reducción de costos, automatización y aceleración tecnológica.</p>
+  </div>
+</div>
+
+<!-- ===== MISSION / STATS ===== -->
+<div style="padding:64px 56px;display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div>
+    <div style="font-size:12px;font-weight:700;color:#38bdf8;letter-spacing:.06em;margin-bottom:14px">NUESTRO ENFOQUE</div>
+    <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:34px;line-height:1.15;margin:0 0 18px">Estrategia, arquitectura, ejecución y gobierno — en un solo equipo</h2>
+    <p style="font-size:15.5px;color:#8f9bb8;line-height:1.7;margin:0">Combinamos consultoría, ingeniería de software e IA aplicada para llevar cada iniciativa de concepto a producción. Trabajamos rápido, medimos el impacto y dejamos capacidad instalada en tu organización.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px 40px">
+    <div style="border-left:3px solid #38bdf8;padding-left:18px"><div style="font-family:'Source Serif 4',serif;font-size:40px;font-weight:500">3–4</div><div style="font-size:12px;color:#7d8bab;margin-top:4px">SEMANAS A PRIMER VALOR</div></div>
+    <div style="border-left:3px solid #38bdf8;padding-left:18px"><div style="font-family:'Source Serif 4',serif;font-size:40px;font-weight:500">100%</div><div style="font-size:12px;color:#7d8bab;margin-top:4px">ORIENTADO A ROI</div></div>
+    <div style="border-left:3px solid #38bdf8;padding-left:18px"><div style="font-family:'Source Serif 4',serif;font-size:40px;font-weight:500">8</div><div style="font-size:12px;color:#7d8bab;margin-top:4px">SECTORES ATENDIDOS</div></div>
+    <div style="border-left:3px solid #38bdf8;padding-left:18px"><div style="font-family:'Source Serif 4',serif;font-size:40px;font-weight:500">AI</div><div style="font-size:12px;color:#7d8bab;margin-top:4px">NATIVE POR DISEÑO</div></div>
+  </div>
+</div>
+
+<!-- ===== PROCESS ===== -->
+<div style="padding:64px 56px 30px">
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:34px;margin:0 0 34px">Cómo trabajamos</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden">
+    <div style="background:#0c1424;padding:32px 28px"><div style="font:700 13px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">01</div><div style="font-weight:700;font-size:18px;margin-bottom:9px">Descubrimiento</div><div style="font-size:13px;color:#8f9bb8;line-height:1.6">Identificamos casos de uso de alto ROI en semanas, no meses.</div></div>
+    <div style="background:#0c1424;padding:32px 28px"><div style="font:700 13px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">02</div><div style="font-weight:700;font-size:18px;margin-bottom:9px">Diseño &amp; arquitectura</div><div style="font-size:13px;color:#8f9bb8;line-height:1.6">Solución técnica alineada a tu seguridad, compliance y stack.</div></div>
+    <div style="background:#0c1424;padding:32px 28px"><div style="font:700 13px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">03</div><div style="font-weight:700;font-size:18px;margin-bottom:9px">Implementación</div><div style="font-size:13px;color:#8f9bb8;line-height:1.6">Entregas funcionales e iterativas con impacto operativo medible.</div></div>
+    <div style="background:#0c1424;padding:32px 28px"><div style="font:700 13px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">04</div><div style="font-weight:700;font-size:18px;margin-bottom:9px">Escala &amp; gobierno</div><div style="font-size:13px;color:#8f9bb8;line-height:1.6">MLOps, monitoreo y gobierno de IA para operar con confianza.</div></div>
+  </div>
+</div>
+
+<!-- ===== VALUES ===== -->
+<div style="padding:50px 56px 30px">
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:34px;margin:0 0 34px">Lo que nos define</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+    <div style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 30px"><div style="font-weight:700;font-size:19px;margin-bottom:10px;color:#7dd3fc">ROI primero</div><div style="font-size:14px;color:#8f9bb8;line-height:1.65">Cada proyecto empieza con la pregunta: ¿dónde genera más valor la IA? El impacto se mide, no se asume.</div></div>
+    <div style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 30px"><div style="font-weight:700;font-size:19px;margin-bottom:10px;color:#7dd3fc">Velocidad real</div><div style="font-size:14px;color:#8f9bb8;line-height:1.65">Equipos híbridos humano + IA que entregan en semanas lo que antes tomaba meses.</div></div>
+    <div style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 30px"><div style="font-weight:700;font-size:19px;margin-bottom:10px;color:#7dd3fc">Seguridad &amp; gobierno</div><div style="font-size:14px;color:#8f9bb8;line-height:1.65">IA privada / on-premise, DevSecOps y cumplimiento como parte natural del proceso.</div></div>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:44px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">Construyamos tu ventaja competitiva con IA.</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Agenda una conversación con nuestro equipo. Sin compromiso.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Hablemos →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sectores / Industrias — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .scard{transition:transform .3s ease,border-color .25s ease}
+  .scard:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.4) !important}
+  .btnp:hover{filter:brightness(1.08)}
+  .btns:hover{background:rgba(255,255,255,.06)}
+
+@media (max-width:860px){
+  div[style~="56px"]{margin-left:20px !important;margin-right:20px !important;padding-left:16px !important;padding-right:16px !important}
+  div[style*="gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0"]{display:none !important}
+  div[style*="gap:14px;flex-shrink:0;white-space:nowrap"] > span{display:none !important}
+  [style*="display:grid"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:32px !important}
+  img[style*="object-fit:cover"]{height:220px !important}
+  h1{font-size:28px !important;line-height:1.18 !important}
+  h2{font-size:22px !important;line-height:1.28 !important}
+  .mt{font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important}
+  img{max-width:100%}
+}
+@media (max-width:480px){
+  h1{font-size:24px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#eef2f9">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<div style="padding:72px 56px 52px;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 20%,#12305e 0%,#0a1530 46%,#070b16 80%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.18),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / Industrias</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:56px;line-height:1.03;letter-spacing:-.015em;margin:0;max-width:840px">Cada industria es distinta. La IA que <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">genera valor</span> también.</h1>
+    <p style="font-size:18px;line-height:1.6;color:#aab6d1;margin:24px 0 0;max-width:640px">Conocemos los retos específicos de cada sector — regulación, operación, velocidad — y aplicamos IA donde el retorno es más claro.</p>
+  </div>
+</div>
+
+<!-- ===== SECTOR GRID ===== -->
+<div style="padding:56px 56px 30px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px">
+
+  <a class="scard" href="estudio-banca-fintech.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/s-banca.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Banca &amp; Fintech</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">El sector que más invierte en IA: seguridad, cumplimiento y experiencia digital.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Detección de fraude</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">KYC / AML</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Scoring crediticio</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Monitoreo SPEI</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Onboarding digital</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-retail-ecommerce.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/t1.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Retail &amp; eCommerce</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Pequeñas mejoras operativas que representan millones en ahorro o venta.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Predicción de demanda</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Optimización de inventarios</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Pricing dinámico</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Recomendaciones</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-logistica-transporte.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/s-logistica.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Logística &amp; Transporte</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Optimización de rutas y operación con impacto directo en costos.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Optimización de rutas</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Forecasting</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Monitoreo de flotillas</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Automatización operativa</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-manufactura.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/t2.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Manufactura</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Impulsada por el nearshoring; lista para IA industrial y de calidad.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Mantenimiento predictivo</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Visión computacional</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">IA de calidad</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Cadena de suministro</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-seguros.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/s-seguros.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Seguros</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Procesos documentales intensivos que la IA acelera de extremo a extremo.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Automatización de reclamos</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Suscripción con IA</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Detección de fraude</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Documentos con IA</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-salud.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/s-salud.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Salud</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Automatización clínica y administrativa con foco en cumplimiento.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">OCR médico</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Automatización de citas</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Analítica de pacientes</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Chatbots de salud</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-telecom.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/telecom-new.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Telecom</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Volumen alto de soporte y operación: territorio natural para automatizar.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Voicebots</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Copilotos de call center</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">AIOps</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Análisis de clientes</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="scard" href="estudio-gobierno.dc.html" style="background:#0c1424;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;display:block">
+    <div style="height:150px;background:url('assets/photos/s-gobierno.png') center/cover"></div>
+    <div style="padding:28px 30px">
+      <div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:23px;margin-bottom:8px">Gobierno &amp; Sector Público</div>
+      <p style="font-size:13.5px;color:#8f9bb8;line-height:1.55;margin:0 0 16px">Gran potencial de automatización documental y atención ciudadana.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Automatización documental</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Atención ciudadana</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Analítica</span><span style="font-size:12px;color:#7dd3fc;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);padding:5px 11px;border-radius:100px">Ciberseguridad</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:44px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿En qué sector operas? Hablemos de tu caso.</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Diseñamos la solución de IA a la medida de tu industria y su regulación.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Contáctanos →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salud — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+
+@media (max-width:860px){
+  div[style~="56px"]{margin-left:20px !important;margin-right:20px !important;padding-left:16px !important;padding-right:16px !important}
+  div[style*="gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0"]{display:none !important}
+  div[style*="gap:14px;flex-shrink:0;white-space:nowrap"] > span{display:none !important}
+  [style*="display:grid"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:32px !important}
+  img[style*="object-fit:cover"]{height:220px !important}
+  h1{font-size:28px !important;line-height:1.18 !important}
+  h2{font-size:22px !important;line-height:1.28 !important}
+  .mt{font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important}
+  img{max-width:100%}
+}
+@media (max-width:480px){
+  h1{font-size:24px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#eef2f9">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="sectores.dc.html" style="color:#38bdf8">Industrias</a> / Salud</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">SECTOR</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">Salud</h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Automatización clínica y administrativa con foco en cumplimiento.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/s-salud.png" alt="Salud" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">El costo oculto de la burocracia clínica</h2>
+    <p>Los costos administrativos representan entre el 20% y el 25% del gasto total en salud, una cifra que puede reducirse drásticamente mediante la automatización. El índice CAQH 2025 señala una oportunidad de ahorro de 20,000 millones de dólares en la industria mediante la transición a transacciones electrónicas, lo que permite que el personal médico dedique mayor porcentaje de su jornada a la atención directa del paciente en lugar de a la burocracia.</p>
+    <p>En México eso toma una dimensión regulatoria concreta: el decreto de digitalización de enero de 2026 establece la digitalización obligatoria del sector salud. Los establecimientos médicos deben migrar a expedientes digitales conforme a la NOM-004-SSA3-2012 y la NOM-024-SSA3-2012 — contar con un ECE conforme a ambas normas dejó de ser opcional para volverse un requisito de operación. No es una tendencia — es una obligación legal con fecha.</p>
+
+    <h2>El marco regulatorio que define todo lo demás</h2>
+    <p>Antes de cualquier conversación sobre IA en salud en México, hay dos normas que no son negociables:</p>
+    <p><strong>NOM-004-SSA3-2012</strong> define qué debe contener el expediente clínico: historia clínica, notas de evolución, consentimientos informados, recetas, resultados de laboratorio e imagen, firma del médico con cédula y sello de tiempo. Aplica a todos los prestadores de salud sin excepción.</p>
+    <p><strong>NOM-024-SSA3-2012</strong> regula los sistemas informáticos que manejan ese expediente: requisitos de interoperabilidad (HL7 FHIR, DICOM, HL7 v2), seguridad (cifrado, control de acceso por roles, auditoría inalterable), y los estándares de intercambio con IMSS, ISSSTE y otros sistemas nacionales. Si el software no tiene dictamen de conformidad vigente de CENETEC, no cumple la norma.</p>
+    <p><strong>NOM-241-SSA1-2025</strong> — la más reciente — establece que si un algoritmo de IA influye en decisiones clínicas, ya no es solo software, es un dispositivo médico digital. Los fabricantes deben operar bajo un Sistema de Gestión de Calidad alineado con ISO 13485. Esto significa que cualquier sistema de IA que sugiera diagnósticos o tratamientos entra directamente en esta categoría regulatoria.</p>
+
+    <h2>Automatización clínica: lo que la IA ya hace en consultorios y hospitales</h2>
+    <p><strong>Transcripción y nota clínica automática.</strong> El médico consulta mientras habla naturalmente con el paciente. El sistema transcribe en tiempo real, estructura la nota en formato SOAP, sugiere diagnósticos con CIE-10 y genera la receta — el médico revisa, edita y firma. El resultado: reducción del 40% en tiempo dedicado a documentación clínica, con la nota ya en el expediente al cierre de la consulta, no al final del turno.</p>
+    <p><strong>Diagnóstico diferencial asistido.</strong> Sistemas con RAG sobre embeddings médicos analizan el historial del paciente, los síntomas actuales y los resultados de laboratorio para sugerir diagnósticos diferenciales con referencias en formato Vancouver. Los hallazgos de imagen (radiografía, ultrasonido) se integran al análisis con IA. El médico valida cada hallazgo antes de integrarlo al expediente — la responsabilidad legal sigue siendo del profesional de salud.</p>
+    <p><strong>Alertas clínicas en tiempo real.</strong> Alertas de alergias (el sistema advierte si el médico prescribe un medicamento al que el paciente es alérgico), interacciones farmacológicas, desviaciones en biomarcadores de laboratorio, y seguimiento de condiciones crónicas entre consultas — todo dentro del expediente electrónico sin cambiar de pantalla.</p>
+
+    <h2>Automatización administrativa: el cuello de botella que nadie ve</h2>
+    <p><strong>Agendamiento y recordatorios.</strong> Integración con WhatsApp para citas, confirmaciones y recordatorios automatizados. El paciente agenda, reprograma y cancela sin llamar — el consultorio recibe menos llamadas de gestión y más consultas productivas.</p>
+    <p><strong>Facturación CFDI integrada al expediente.</strong> La nota clínica genera automáticamente la factura electrónica 4.0 vinculada al acto médico, al diagnóstico CIE-10 y al expediente del paciente — sin captura doble, sin errores de código de servicio, con trazabilidad completa para auditoría del SAT.</p>
+    <p><strong>Gestión de resultados de laboratorio e imagen.</strong> Los estudios llegan directamente al expediente (integración con LIS, PACS, RIS vía DICOM y HL7), se vinculan a la nota que los solicitó y se notifican al médico sin que el paciente ni el staff tengan que llevar físicamente un documento.</p>
+
+    <h2>El límite que la IA no puede cruzar en salud</h2>
+    <p>La respuesta es clara: si la IA se equivoca en un diagnóstico, la responsabilidad legal recae en el médico. La IA es una herramienta de asistencia — como un estetoscopio o un laboratorio. El profesional de salud certificado tiene la última palabra. Esto no es una limitación tecnológica — es la única forma de implementar IA clínica de forma responsable bajo el marco regulatorio mexicano actual.</p>
+    <p>En México, el marco regulatorio va rezagado frente a la velocidad de adopción tecnológica. Aunque la IA ya muestra aplicaciones en análisis de imagen médica, diagnóstico asistido y gestión de riesgos clínicos, persisten desafíos éticos y regulatorios que limitan una adopción segura y transparente. Los Principios Chapultepec (enero 2026) son una declaración sin carácter vinculante — la NOM-241 y las normas de expediente son, por ahora, el marco real.</p>
+
+    <h2>Dónde está el ROI medible</h2>
+    <p>Hospitales que abordan la IA con metodología sólida, enfoque centrado en el paciente y aliados tecnológicos confiables están viendo ROI positivo en 12-24 meses. Las áreas de mayor retorno:</p>
+    <p>Reducción de tiempo administrativo por médico (transcripción, notas, facturación) → más consultas por turno o menos horas extra.</p>
+    <p>Reducción de errores de medicación y alergias → menor riesgo legal y de siniestros.</p>
+    <p>Cumplimiento automático de NOM-004/024 → auditorías de COFEPRIS sin esfuerzo de preparación.</p>
+    <p>Interoperabilidad real con aseguradoras → reembolso más rápido, menos rechazos por documentación incompleta.</p>
+
+    <h2>La pregunta de fondo</h2>
+    <p>No es si implementar IA en salud — el decreto de 2026 ya hizo obligatoria la digitalización del expediente, que es el primer paso. La pregunta es si el sistema elegido cumple NOM-004, NOM-024 y NOM-241, si tiene dictamen CENETEC vigente, y si la automatización clínica está diseñada para que el médico mantenga el control de cada decisión — o si alguien en la organización asumirá una responsabilidad regulatoria que no ha dimensionado.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: Penn LDI 2025, CAQH Index 2025, DOF decreto digitalización enero 2026, NOM-004/024/241-SSA, CENETEC/COFEPRIS, Magokoro IA Salud México, Luna Salud, SaludTotal, Sophia Med, Raditech HIS, IA Aplicada, Consultor Salud — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Tu sistema cumple NOM-004, NOM-024 y NOM-241?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Evaluamos tu expediente clínico y automatización antes de escalar.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

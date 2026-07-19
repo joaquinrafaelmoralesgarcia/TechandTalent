@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguros — Tech and Talent Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .btnp:hover{filter:brightness(1.08)}
+  .art h2{font-family:'Source Serif 4',serif;font-weight:500;font-size:26px;line-height:1.25;margin:42px 0 14px;color:#eef2f9}
+  .art p{font-size:16px;line-height:1.8;color:#c3cbdd;margin:0 0 16px}
+  .art strong{color:#eef2f9;font-weight:700}
+  .art .kicker{font-size:13px;color:#7d8bab;font-style:italic;margin-top:36px}
+  .art hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:40px 0}
+
+@media (max-width:860px){
+  x-dc > div{padding-left:16px !important;padding-right:16px !important;margin-left:0 !important;margin-right:0 !important}
+  x-dc > div[style*="16px 56px"]{padding-top:12px !important;padding-bottom:12px !important}
+  .ttnavlinks{display:none !important}
+  .ttnavright > span{display:none !important}
+  .ttnavright{gap:8px !important}
+  [style*="display:grid"],[style*="display: grid"]{grid-template-columns:1fr !important;gap:16px !important}
+  [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  img[alt="Tech and Talent Services"]{height:30px !important;width:auto !important}
+  .ttlogotxt{font-size:14px !important}
+  .ttlogosub{font-size:9px !important;letter-spacing:.22em !important}
+  img[style*="object-fit"]{height:200px !important;width:100% !important;max-width:100% !important}
+  h1{font-size:26px !important;line-height:1.2 !important;max-width:100% !important}
+  h2{font-size:20px !important;line-height:1.28 !important;max-width:100% !important}
+  h3{font-size:17px !important}
+  p{font-size:15px !important;line-height:1.65 !important}
+  .art h2{font-size:20px !important;margin-top:28px !important}
+  .art p{font-size:15px !important;line-height:1.75 !important}
+  .mt{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:11.5px}
+  .mt th,.mt td{padding:8px 8px !important;white-space:normal}
+  a.btnp{padding:8px 12px !important;font-size:11.5px !important}
+  img{max-width:100%}
+  input,select,textarea{max-width:100% !important;width:100% !important;box-sizing:border-box !important}
+  video,iframe{max-width:100% !important}
+}
+@media (max-width:480px){
+  h1{font-size:22px !important;letter-spacing:-.005em !important}
+  h2{font-size:18px !important}
+  x-dc > div{padding-left:14px !important;padding-right:14px !important}
+  .ttlogotxt{font-size:13px !important}
+  .ttlogosub{display:none !important}
+  a.btnp{padding:7px 10px !important;font-size:11px !important}
+}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div class="ttlogotxt" style="font-weight:800;font-size:16px">Tech and Talent</div><div class="ttlogosub" style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div class="ttnavlinks" style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.dc.html" style="color:#eef2f9">Industrias</a>
+    <a class="navlink" href="servicios.dc.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.dc.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.dc.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.dc.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div class="ttnavright" style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.dc.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:64px 56px 0;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#12305e 0%,#0a1530 46%,#070b16 78%)">
+  <div style="position:absolute;top:-100px;right:-40px;width:460px;height:460px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2;max-width:840px">
+    <div style="font-size:12px;color:#7d8bab;margin-bottom:18px"><a class="navlink" href="index.dc.html" style="color:#38bdf8">Home</a> / <a class="navlink" href="sectores.dc.html" style="color:#38bdf8">Industrias</a> / Seguros</div>
+    <div style="font-size:11px;font-weight:800;letter-spacing:.09em;color:#7dd3fc;margin-bottom:16px">SECTOR</div>
+    <h1 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.01em;margin:0">Seguros</h1>
+    <p style="font-size:17px;line-height:1.6;color:#aab6d1;margin:22px 0 0;max-width:680px">Procesos documentales intensivos que la IA acelera de extremo a extremo.</p>
+  </div>
+  <div style="position:relative;z-index:2;margin:40px 0 0;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)">
+    <img src="assets/photos/s-seguros.png" alt="Seguros" style="display:block;width:100%;height:360px;object-fit:cover">
+  </div>
+</div>
+
+<!-- ===== ARTICLE ===== -->
+<div style="padding:56px 56px 20px;max-width:800px;margin:0 auto">
+  <div class="art">
+    <h2 style="margin-top:0">El sector más cargado de papel en México</h2>
+    <p>Las aseguradoras en México pagaron 522 mil millones de pesos en siniestros durante 2024, con un crecimiento que superó el 10%, impulsado por gastos médicos, vida y autos. Detrás de cada peso pagado hay un expediente: un reporte de siniestro, una póliza, un dictamen pericial, una factura médica, un acta. Y detrás de cada expediente, históricamente, hay alguien leyendo, clasificando, transcribiendo y enviando documentos de un sistema a otro.</p>
+    <p>Ese es el problema que la IA está resolviendo en seguros — no de forma puntual, sino de extremo a extremo del ciclo: desde que el cliente reporta el siniestro hasta que el pago se libera.</p>
+
+    <h2>El ciclo documental que la IA está transformando</h2>
+    <p><strong>1. Reporte y captura inicial.</strong> El cliente notifica el siniestro por app, portal, WhatsApp o llamada. Sistemas que combinan chatbot para la recolección de datos inicial, OCR para la extracción automática de información de documentos e integración con el sistema de gestión interno, logran reducir el tiempo de apertura de expediente de días a menos de 48 horas. El cliente notifica de forma autónoma, la información se clasifica y se envía al perito al instante.</p>
+    <p><strong>2. Clasificación y extracción de documentos.</strong> El expediente de un siniestro puede contener docenas de documentos en formatos distintos: PDFs escaneados, fotografías, facturas, dictámenes médicos. Soluciones de IDP (Intelligent Document Processing) capturan y clasifican automáticamente partes de siniestro, pólizas, informes periciales y documentación médica, extrayendo los datos relevantes — número de póliza, asegurado, fechas, coberturas, importes, diagnósticos — sin intervención manual y con reglas que se adaptan a cada tipo de documento.</p>
+    <p><strong>3. Verificación de cobertura.</strong> Los sistemas de IA generativa procesan el reporte de siniestro, analizan la documentación adjunta, verifican la cobertura según las condiciones de la póliza y emiten una resolución — aprobación, rechazo o solicitud de información adicional — en minutos. Para siniestros de bajo monto y alta frecuencia (colisiones menores en automóviles, reclamaciones de hogar), este proceso automatizado resuelve en horas lo que antes tomaba semanas.</p>
+    <p><strong>4. Detección de fraude preventiva.</strong> La IA ya se utiliza en el sector para la detección de fraudes con modelos que comparan el patrón del siniestro reportado contra el historial del asegurado, la geolocalización, el comportamiento de conducción (telemática) y patrones de fraude conocidos — antes de liberar el pago, no después. El fraude que antes se detectaba en auditoría posterior ahora se filtra en el flujo de autorización.</p>
+    <p><strong>5. Suscripción y cotización.</strong> La IA generativa impacta la suscripción permitiendo cotizaciones hiperpersonalizadas basadas en datos conductuales. Varias aseguradoras en México utilizan modelos predictivos y telemática — especialmente en automóviles — para calcular primas basadas en comportamiento de conducción, historial de siniestros y variables contextuales. El resultado es una prima más precisa para el asegurado y menor siniestralidad para la aseguradora.</p>
+
+    <h2>El impacto medido</h2>
+    <p>Los casos más claros de retorno de IA en el sector asegurador mexicano se concentran en tres áreas: reducción de tareas manuales entre 20% y 40% cuando los procesos se rediseñan correctamente; uso de triage inteligente, validación documental automatizada y workflows integrados; y copilotos para agentes y automatización de cotización y emisión, según Tech and Solve (El Asegurador México).</p>
+    <p>El patrón de impacto es consistente: cada proceso que antes requería que un humano leyera un documento, extrajera datos y los capturara en otro sistema es candidato a automatización con retorno directo — el volumen del sector (millones de pólizas, cientos de miles de siniestros al año) convierte ahorros marginales por expediente en millones al año.</p>
+
+    <h2>La "fábrica de decisiones" como modelo operativo</h2>
+    <p>La tendencia más relevante para 2026 es la IA agéntica en seguros: a diferencia de la automatización tradicional, este enfoque coordina procesos completos y permite que distintos sistemas colaboren para cumplir objetivos más amplios, conectando áreas como suscripción, gestión documental, siniestros, atención al cliente, fraude y back-office.</p>
+    <p>McKinsey sostiene que el verdadero valor de la IA en seguros aparece cuando se integra de forma sistemática en distintos procesos del negocio. En la práctica, esto se parece a "construir una fábrica de decisiones" con procesos automatizados y participación humana solo donde el riesgo o la regulación lo exige.</p>
+    <p>En 2025 muchas iniciativas de IA en seguros fueron pilotos. El cambio relevante de 2026 es la industrialización: IA en producción, integrada al proceso y con gobernanza. La IA generativa crece como copiloto de ventas, operaciones y soporte — con más control que entusiasmo.</p>
+
+    <h2>El límite que no se puede ignorar</h2>
+    <p>En México, la CNSF no tiene aún disposiciones específicas para IA, aunque la LISF, la LSCS y la LFPDPPP generan obligaciones aplicables por analogía. La responsabilidad de la aseguradora no se transfiere al algoritmo: toda decisión automatizada que incumpla obligaciones legales o contractuales puede ser impugnada.</p>
+    <p>El principio que guía cualquier implementación responsable en el sector: sin una buena gestión documental no hay control. Papeles dispersos, PDFs mal clasificados o información duplicada generan retrasos, errores y decisiones poco fiables. La IA necesita datos estructurados y procesos bien definidos antes de añadir inteligencia — automatizar el caos produce caos automatizado, más rápido.</p>
+
+    <h2>La pregunta de fondo</h2>
+    <p>No es si la IA puede automatizar el ciclo de siniestros — ya lo está haciendo en varias aseguradoras en México. La pregunta es si el punto de partida (gestión documental, calidad de datos, definición de procesos) está en condiciones de soportar la automatización, y si la aseguradora está lista para operar con supervisión humana donde la regulación lo exige, sin frenar los flujos que la IA puede resolver completamente.</p>
+
+    <hr>
+    <p class="kicker">Fuentes: CNSF México, BBVA Seguros, Tech and Solve / El Asegurador México, Flownexion, DocuWare, Cultura del Contrato de Seguro (LISF/CNSF), MpM Software Tendencias LATAM 2026, Softtek/Entnerd — consultados en julio 2026.</p>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:56px 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:40px;line-height:1.02;margin:0;max-width:640px;color:#04121f">¿Tu ciclo de siniestros está listo para IA de extremo a extremo?</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">Evaluamos tu gestión documental y procesos antes de automatizar.</p>
+  <a href="contacto.dc.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.dc.html">SDLC con IA</a><a class="navlink" href="servicios.dc.html">Automatización empresarial</a><a class="navlink" href="servicios.dc.html">Modernización legacy</a><a class="navlink" href="servicios.dc.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.dc.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.dc.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.dc.html">Telecom</a><a class="navlink" href="sectores.dc.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.dc.html">Nosotros</a><a class="navlink" href="casos.dc.html">Casos de éxito</a><a class="navlink" href="insights.dc.html">Insights</a><a class="navlink" href="contacto.dc.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
