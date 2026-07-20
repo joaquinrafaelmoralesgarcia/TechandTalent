@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tech and Talent Services — IA para todo el ciclo del software</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#070b16;font-family:Archivo,system-ui,sans-serif;color:#eef2f9}
+  a{color:inherit;text-decoration:none}
+  a.navlink:hover{color:#eef2f9}
+  .cap:hover{background:#0f1b30 !important}
+  .icard{transition:transform .3s ease}
+  .icard:hover{transform:translateY(-4px)}
+  .chip:hover{border-color:rgba(56,189,248,.5) !important;color:#eef2f9 !important}
+  .btnp:hover{filter:brightness(1.08)}
+  .btns:hover{background:rgba(255,255,255,.06)}
+  @keyframes ttmarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes ttfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+</style>
+</helmet>
+
+<!-- ===== NAV ===== -->
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 56px;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;background:rgba(7,11,22,.82);backdrop-filter:blur(12px);z-index:50">
+  <a href="index.html" style="display:flex;align-items:center;gap:12px">
+    <img src="assets/logo-mark.png" alt="Tech and Talent Services" style="height:40px;width:auto;display:block">
+    <div style="line-height:1"><div style="font-weight:800;font-size:16px">Tech and Talent</div><div style="font-size:10px;letter-spacing:.28em;color:#7d8bab;margin-top:2px">SERVICES</div></div>
+  </a>
+  <div style="display:flex;gap:20px;font-size:14px;font-weight:500;flex-shrink:1;min-width:0">
+    <a class="navlink" href="sectores.html" style="color:#c3cbdd">Industrias</a>
+    <a class="navlink" href="servicios.html" style="color:#c3cbdd">Servicios</a>
+    <a class="navlink" href="insights.html" style="color:#c3cbdd">Insights</a>
+    <a class="navlink" href="casos.html" style="color:#c3cbdd">Casos</a>
+    <a class="navlink" href="nosotros.html" style="color:#c3cbdd">Nosotros</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;white-space:nowrap">
+    <span style="font-size:12px;color:#7d8bab;font-weight:600;white-space:nowrap">ES <span style="color:#3c4560">| EN</span></span>
+    <span style="font-size:17px;color:#c3cbdd">⌕</span>
+    <a class="btnp" href="contacto.html" style="font-size:13px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:11px 20px;border-radius:8px">Agenda una demo</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div style="padding:78px 56px 74px;position:relative;overflow:hidden;background:radial-gradient(circle at 82% 30%,#12305e 0%,#0a1530 42%,#070b16 78%)">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,#070b16 6%,rgba(7,11,22,.72) 40%,rgba(7,11,22,.32) 100%),url('assets/photos/p2.png') center/cover"></div>
+  <div style="position:absolute;top:-120px;right:-60px;width:520px;height:520px;background:radial-gradient(circle,rgba(34,211,238,.22),transparent 62%);filter:blur(16px)"></div>
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600;color:#7dd3fc;border:1px solid rgba(56,189,248,.35);padding:7px 14px;border-radius:100px;margin-bottom:28px">
+      <span style="width:7px;height:7px;border-radius:50%;background:#22d3ee;box-shadow:0 0 10px #22d3ee"></span>AI-Native SDLC &amp; Automatización
+    </div>
+    <h1 style="font-family:'Source Serif 4',Georgia,serif;font-weight:500;font-size:60px;line-height:1.04;letter-spacing:-.015em;margin:0;max-width:640px;text-shadow:0 2px 34px rgba(0,0,0,.4)">
+      El futuro del software es <span style="background:linear-gradient(120deg,#38bdf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">autónomo, seguro</span> y con ROI.
+    </h1>
+    <p style="font-size:18px;line-height:1.6;color:#aab6d1;margin:26px 0 34px;max-width:520px">Automatizamos operaciones, modernizamos sistemas legacy y multiplicamos la productividad de ingeniería. Impacto medible en semanas.</p>
+    <div style="display:flex;gap:13px">
+      <a class="btnp" href="contacto.html" style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;background:linear-gradient(135deg,#22d3ee,#2563eb);color:#04121f;padding:15px 28px;border-radius:9px">Habla con un experto →</a>
+      <a class="btns" href="servicios.html" style="font-size:15px;font-weight:600;color:#eef2f9;padding:15px 28px;border-radius:9px;border:1px solid rgba(255,255,255,.2)">Ver capacidades</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STATS ===== -->
+<div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="padding:28px 56px;border-right:1px solid rgba(255,255,255,.08)"><div style="font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;color:#38bdf8">3–4</div><div style="font-size:12px;color:#7d8bab;letter-spacing:.02em;margin-top:4px">SEMANAS A PRIMER VALOR</div></div>
+  <div style="padding:28px 44px;border-right:1px solid rgba(255,255,255,.08)"><div style="font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;color:#38bdf8">40%+</div><div style="font-size:12px;color:#7d8bab;letter-spacing:.02em;margin-top:4px">MENOS RETRABAJO</div></div>
+  <div style="padding:28px 44px;border-right:1px solid rgba(255,255,255,.08)"><div style="font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;color:#38bdf8">10×</div><div style="font-size:12px;color:#7d8bab;letter-spacing:.02em;margin-top:4px">VELOCIDAD DE ENTREGA</div></div>
+  <div style="padding:28px 44px"><div style="font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;color:#38bdf8">120+</div><div style="font-size:12px;color:#7d8bab;letter-spacing:.02em;margin-top:4px">AGENTES EN PRODUCCIÓN</div></div>
+</div>
+
+<!-- ===== MARQUEE ===== -->
+<div style="padding:20px 0;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="display:flex;gap:52px;width:max-content;animation:ttmarquee 26s linear infinite;color:#3c4560;font-weight:700;font-size:16px;letter-spacing:.03em;padding-left:56px">
+    <span>BANCA</span><span style="color:#22d3ee">·</span><span>FINTECH</span><span style="color:#22d3ee">·</span><span>RETAIL</span><span style="color:#22d3ee">·</span><span>TELECOM</span><span style="color:#22d3ee">·</span><span>MANUFACTURA</span><span style="color:#22d3ee">·</span><span>SEGUROS</span><span style="color:#22d3ee">·</span><span>SALUD</span><span style="color:#22d3ee">·</span><span>LOGÍSTICA</span><span style="color:#22d3ee">·</span>
+    <span>BANCA</span><span style="color:#22d3ee">·</span><span>FINTECH</span><span style="color:#22d3ee">·</span><span>RETAIL</span><span style="color:#22d3ee">·</span><span>TELECOM</span><span style="color:#22d3ee">·</span><span>MANUFACTURA</span><span style="color:#22d3ee">·</span><span>SEGUROS</span><span style="color:#22d3ee">·</span><span>SALUD</span><span style="color:#22d3ee">·</span><span>LOGÍSTICA</span><span style="color:#22d3ee">·</span>
+  </div>
+</div>
+
+<!-- ===== CAPABILITIES ===== -->
+<div style="padding:70px 56px 24px">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:32px">
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#38bdf8;letter-spacing:.06em;margin-bottom:12px">CAPACIDADES</div>
+      <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:40px;letter-spacing:-.01em;margin:0;max-width:640px;line-height:1.05">De la idea a producción, con IA en cada etapa</h2>
+    </div>
+    <a class="navlink" href="servicios.html" style="font-size:13px;color:#38bdf8;font-weight:600;padding-bottom:8px">Ver todos los servicios →</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden">
+    <a class="cap" href="estudio-sdlc-ia.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">01</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">SDLC con IA</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">Generación de código, pruebas, docs y estimaciones a lo largo del ciclo.</div></a>
+    <a class="cap" href="estudio-automatizacion-empresarial.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">02</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">Automatización empresarial</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">RPA + IA generativa para tickets, workflows, backoffice y CX.</div></a>
+    <a class="cap" href="estudio-modernizacion-legacy.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">03</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">Modernización legacy</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">Java 8→21, .NET Core, monolito→microservicios y migración a la nube.</div></a>
+    <a class="cap" href="estudio-devsecops.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">04</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">DevSecOps</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">Detección y remediación de vulnerabilidades, SAST/DAST y compliance.</div></a>
+    <a class="cap" href="estudio-copilotos-productividad.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">05</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">Copilotos &amp; productividad</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">Copilotos para dev, QA, DevOps y soporte. Búsqueda y RAG sobre tu código.</div></a>
+    <a class="cap" href="estudio-datos-analitica.html" style="background:#0c1424;padding:32px 30px;display:block"><div style="font:700 12px ui-monospace,monospace;color:#38bdf8;margin-bottom:16px">06</div><div style="font-weight:700;font-size:19px;margin-bottom:9px">Datos &amp; analítica</div><div style="font-size:13.5px;color:#8f9bb8;line-height:1.55">RAG empresarial, dashboards inteligentes, forecasting y modelos privados.</div></a>
+  </div>
+</div>
+
+<!-- ===== SECTORS ===== -->
+<div style="padding:58px 56px 30px">
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:28px;letter-spacing:-.01em;margin:0 0 22px">Sectores donde generamos impacto</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:11px">
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Banca &amp; Fintech</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Retail &amp; eCommerce</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Telecom</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Manufactura</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Seguros</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Salud</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Logística</a>
+    <a class="chip" href="sectores.html" style="border:1px solid rgba(255,255,255,.14);color:#d3d9e8;padding:11px 20px;border-radius:100px;font-size:14px;font-weight:500">Gobierno</a>
+  </div>
+</div>
+
+<!-- ===== INSIGHTS ===== -->
+<div style="padding:30px 56px 64px">
+  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:24px">
+    <h2 style="font-family:'Source Serif 4',serif;font-weight:500;font-size:28px;letter-spacing:-.01em;margin:0">Insights</h2>
+    <a class="navlink" href="insights.html" style="font-size:13px;color:#38bdf8;font-weight:600">Ver todos →</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <a class="icard" href="insight-agentes-ia.html" style="display:block;border-radius:8px;overflow:hidden"><img src="assets/photos/vision.png" alt="Donde la visión se digitaliza" style="display:block;width:100%;aspect-ratio:10/14;object-fit:cover;object-position:top center"></a>
+    <a class="icard" href="estudio-innovacion.html" style="display:block;border-radius:8px;overflow:hidden"><img src="assets/photos/p3.png" alt="Impulsa tu innovación y acelera tu transformación" style="display:block;width:100%;aspect-ratio:10/14;object-fit:cover;object-position:top center"></a>
+    <a class="icard" href="estudio-ciberresiliente.html" style="display:block;border-radius:8px;overflow:hidden"><img src="assets/photos/p6.png" alt="El liderazgo ciber-resiliente" style="display:block;width:100%;aspect-ratio:10/14;object-fit:cover;object-position:top center"></a>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div style="margin:0 56px 56px;padding:58px 52px;border-radius:18px;background:linear-gradient(120deg,#22d3ee,#2563eb);color:#04121f;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-40px;right:-20px;width:280px;height:280px;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 60%)"></div>
+  <h2 style="font-family:'Source Serif 4',serif;font-weight:600;font-size:42px;line-height:1.02;margin:0;max-width:660px;color:#04121f">Identifiquemos tu primer caso de uso de alto ROI.</h2>
+  <p style="font-size:16px;color:rgba(4,18,31,.72);margin:18px 0 30px;max-width:520px;font-weight:500">En una sesión de descubrimiento encontramos dónde la IA genera impacto medible en tu operación.</p>
+  <a class="btns" href="contacto.html" style="font-size:14px;font-weight:700;background:#04121f;color:#eef2f9;padding:15px 30px;border-radius:9px">Agenda tu sesión →</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#05080f;border-top:1px solid rgba(255,255,255,.08);padding:56px 56px 30px">
+  <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px"><img src="assets/logo-mark.png" alt="" style="height:34px;width:auto"><span style="font-weight:800;font-size:16px">Tech and Talent Services</span></div>
+      <p style="font-size:13.5px;color:#7d8bab;line-height:1.6;max-width:300px;margin:0">Automatización e inteligencia artificial para empresas. Del descubrimiento a producción, con ROI medible.</p>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SERVICIOS</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="servicios.html">SDLC con IA</a><a class="navlink" href="servicios.html">Automatización empresarial</a><a class="navlink" href="servicios.html">Modernización legacy</a><a class="navlink" href="servicios.html">DevSecOps</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">SECTORES</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="sectores.html">Banca &amp; Fintech</a><a class="navlink" href="sectores.html">Retail &amp; eCommerce</a><a class="navlink" href="sectores.html">Telecom</a><a class="navlink" href="sectores.html">Manufactura</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:#5a6787;letter-spacing:.06em;margin-bottom:16px">EMPRESA</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px;color:#aab6d1">
+        <a class="navlink" href="nosotros.html">Nosotros</a><a class="navlink" href="casos.html">Casos de éxito</a><a class="navlink" href="insights.html">Insights</a><a class="navlink" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;color:#5a6787;font-size:12.5px">
+    <span>© 2026 Tech and Talent Services · México</span>
+    <span>techandtalentservices.com.mx</span>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object -First 20)",
+      "Bash(Measure-Object -Line)",
+      "*",
+      "PowerShell(explorer \"C:\\\\Users\\\\Joaquin\\\\Downloads\\\\TechandTalent\\\\partes\")",
+      "PowerShell(explorer \"C:\\\\Users\\\\Joaquin\\\\Downloads\\\\TechandTalent\\\\deploy\")",
+      "PowerShell(explorer \"C:\\\\Users\\\\Joaquin\\\\Downloads\\\\TechandTalent\\\\partes-responsivo\")"
+    ]
+  }
+}
